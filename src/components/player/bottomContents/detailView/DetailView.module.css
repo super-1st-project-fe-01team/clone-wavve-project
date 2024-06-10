@@ -1,0 +1,38 @@
+.detailViewBox {
+  display: flex;
+}
+
+.thumbnail {
+}
+
+.thumbnail img {
+  margin-top: 20px;
+  border-radius: 10px;
+
+  width: 190px;
+  height: 295px;
+}
+
+.detailInfoBox {
+  margin-left: 10px;
+}
+
+.summary {
+  color: #a5a5a5;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.detailInfoTable {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.detailInfoTable td {
+  padding: 15px;
+  text-align: left;
+}
+
+.viewerAgeLimit {
+  width: 50px;
+}
