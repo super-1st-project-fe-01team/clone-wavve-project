@@ -1,0 +1,13 @@
+.loginLayout {
+    width: 560px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 180px;
+    padding-top: 20px;
+    background-color:#252525;
+    color: white ;
+    
+}
