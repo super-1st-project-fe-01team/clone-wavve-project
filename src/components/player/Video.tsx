@@ -1,7 +1,8 @@
 import React from "react";
+import {VideoProps} from "../../models/Player";
 
-const Video = () => {
-  return <div>{/*비디오를 넣어야한다.. */}</div>;
+const Video:React.FC<VideoProps> = (props) => {
+  return <div>{props.videoUrl}</div>;
 };
 
 export default Video;

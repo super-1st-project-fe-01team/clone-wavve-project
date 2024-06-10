@@ -1,22 +1,23 @@
 import React from "react";
 import styles from "./videoDetail.module.css";
+import {MetadataListProps} from "../../../models/Player";
 
-const MetadataList = () => {
+const MetadataList:React.FC<MetadataListProps> = (props) => {
   return (
-    <div className={styles.metadataList}>
-      <div className="dot-item">시즌 1개</div>
-      <div className="dot-item">
-        <img
-          className={styles.ageRestriction}
-          src="https://www.wavve.com/img/element-icons-72-x-72-ic-vod-15-years.3f150ba7.svg"
-          alt="15세 이상"
-        />
+      <div className={styles.metadataList}>
+        <div className="dot-item seasonEpisodeCount">{props.seasonEpisodeCount}</div>
+        <div className="dot-item">
+          <img
+              className={styles.ageRestriction}
+              src={props.ageRestriction.ageImage}
+              alt={props.ageRestriction.ageString}
+          />
+        </div>
+        <div className="dot-item category">드라마</div>
+        <div className="dot-item">
+          {props.isClosedCaptions &&  <img src ="나중에 자막이미지넣기" alt="자막제공여부" />}
+        </div>
       </div>
-      <div className="dot-item">드라마</div>
-      <div className="dot-item">
-        <img src="" alt="태그" />
-      </div>
-    </div>
   );
 };
 
