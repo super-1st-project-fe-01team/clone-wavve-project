@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import styles from "./Navigation.module.css";
 
 
 const Navigation = () => {
+    const [couponShow, setCouponShow] = useState(false);
+    const [cateShow, setCateShow] = useState(false);
+
+
     return (
 
         <header>
@@ -12,9 +16,20 @@ const Navigation = () => {
                     <ul className={styles.naveWrapList}>
                         <li><Link to="#">로그인</Link></li>
                         <li><Link to="#">이용권</Link></li>
-                        <li className={styles.couponMenu}>
+                        <li className={couponShow ? `${styles.over} ${styles.couponMenu}` : styles.couponMenu}
+                            onMouseOver={() => {
+                                setCouponShow(true)
+                            }}
+                            onMouseOut={() => {
+                                setCouponShow(false)
+                            }}
+                        >
                             <Link to="#">쿠폰·코인</Link>
-                            <div className={styles.couponMenuWrap}>
+                            <div className={styles.couponMenuWrap}
+                                 onMouseOut={() => {
+                                     setCouponShow(false)
+                                 }}
+                            >
                                 <ul>
                                     <li><Link to="#">쿠폰 등록</Link></li>
                                     <li><Link to="#">코인 충전</Link></li>
@@ -38,9 +53,19 @@ const Navigation = () => {
                     </h1>
                     <ul>
                         <li><Link to="#">홈</Link></li>
-                        <li>
+                        <li className={cateShow ? styles.cateOver : styles.cate}
+                            onMouseOver={() => {
+                                setCateShow(true)
+                            }}
+                            onMouseOut={() => {
+                                setCateShow(false)
+                            }}>
                             <Link to="#">카테고리</Link>
-                            <div className={styles.categoryMenu}>
+                            <div className={styles.categoryMenu}
+                                 onMouseOut={() => {
+                                     setCateShow(false)
+                                 }}
+                            >
                                 <button>전체 카테고리 보기</button>
                                 <ul>
                                     <li><Link to="#">추천메뉴</Link></li>

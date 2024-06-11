@@ -23,7 +23,7 @@ body {
     list-style: none;
     cursor: pointer;
     margin: 0 auto;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
 }
 
 .naveWrapList li {
@@ -37,32 +37,39 @@ body {
 .naveWrapList li a {
     text-decoration: none;
     color: #a5a5a5;
+    line-height: 34px;
 }
 
 .navWrap .couponMenu {
     position: relative;
     padding-right: 20px;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAH1JREFUKBVjYBj6gBHmhe3btzv8//9/JZBv5eXldRckvnPnTsW/f/+eZGRkDPP09DwAEoNrAHG2bt2aAaTy+fn5zX7//v3/+/fvIMVTgYqngeRBAEUDSABo0xSgTUpA5l8g/dTb2xtkCG4AVMQEtOnMtm3brgLZzLhVDl0ZANeHNOWoHfwJAAAAAElFTkSuQmCC") no-repeat 62px 3px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAH1JREFUKBVjYBj6gBHmhe3btzv8//9/JZBv5eXldRckvnPnTsW/f/+eZGRkDPP09DwAEoNrAHG2bt2aAaTy+fn5zX7//v3/+/fvIMVTgYqngeRBAEUDSABo0xSgTUpA5l8g/dTb2xtkCG4AVMQEtOnMtm3brgLZzLhVDl0ZANeHNOWoHfwJAAAAAElFTkSuQmCC") no-repeat 62px 11px;
 }
 
 .couponMenuWrap {
     position: absolute;
     width: 87px;
-    top: 25px;
+    top: 34px;
     right: 0;
     background-color: #101010;
     z-index: 999;
+    border-top: 1px solid #2f2f2f;
+}
+
+.over .couponMenuWrap ul {
+    display: block;
+    list-style: none;
+    padding: 0;
 }
 
 .couponMenuWrap ul {
-    display: block;
+    display: none;
     list-style: none;
     padding: 0;
 }
 
 .couponMenuWrap ul li {
     text-align: center;
-    padding: 10px 0;
 }
 
 .couponMenuWrap ul li:nth-child(1) {
@@ -71,6 +78,10 @@ body {
 
 .couponMenuWrap ul li a:hover {
     color: #fff;
+}
+
+.over {
+    display: block;
 }
 
 .logo {
@@ -114,7 +125,12 @@ body {
     color: #fff;
 }
 
+.cateOver .categoryMenu {
+    display: block;
+}
+
 .categoryMenu {
+    display: none;
     position: absolute;
     top: 85px;
     left: 50%;
@@ -123,6 +139,7 @@ body {
     background-color: #101010;
     min-width: 180px;
     z-index: 1;
+
 }
 
 .categoryMenu button {
@@ -149,6 +166,7 @@ body {
 
 .categoryMenu ul li {
     padding: 6px 0;
+    height: 100%;
 }
 
 .categoryMenu ul li:last-child {
