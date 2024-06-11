@@ -6,7 +6,12 @@ body {
     justify-items: center;
     align-items: center;
     background-color: #1B1B1B;
-    
+
+}
+
+.loginTop {
+    padding: 25px;
+    font-size: 30px;
 }
 
 
