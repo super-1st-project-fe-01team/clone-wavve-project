@@ -36,7 +36,7 @@ const PlayerContentWarp:React.FC<PlayerProps> = (props) => {
       <div className={styles.videoContentWrap}>
         <Video videoUrl={props.video.videoUrl}/>
         <VideoDetail titleImage={props.videoDetail.titleImage}
-                     metadataList={props.metadataList}
+                     metadataList={props.videoDetail.metadataList}
                      summary={props.videoDetail.summary}
                      notice={props.videoDetail.notice}/>
         <BottomContents preview={props.bottomContents.preview} detailView={props.bottomContents.detailView}/>
