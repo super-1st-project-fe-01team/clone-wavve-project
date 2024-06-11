@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./HeaderIcon.module.css";
 
-const Header: React.FC = () => {
+const HeaderIcon: React.FC = () => {
   return (
       <div className={styles.iconBar}>
         <div className={styles.text}>LIVE</div>
@@ -23,4 +23,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default HeaderIcon;
