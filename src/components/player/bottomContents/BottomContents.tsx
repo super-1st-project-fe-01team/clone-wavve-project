@@ -16,7 +16,6 @@ const BottomContents:React.FC<BottomContentsProps> = (props) => {
         {/* 시간상 문제로 우선 상세정보 컴포넌트만 고정적으로 나오게 구현계획 */}
         <DetailView thumbnailImage={props.detailView.thumbnailImage}
                     summary={props.detailView.summary}
-                    overview={props.detailView.overview}
                     genreTags={props.detailView.genreTags}
                     castings={props.detailView.castings}
                     director={props.detailView.director}
