@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+import {NoticeProps} from "../../../models/Player";
 
-const Notice = () => {
+const Notice:React.FC<NoticeProps> = (props) => {
 
   const[isClick,setClick] = useState(false);
 
@@ -19,7 +20,11 @@ const Notice = () => {
             <span>서비스 안내</span>
           </div>
         </button>
-        {isClick && <div className="noticeContent"><span>날짜</span> <span>내용</span></div>}
+        {isClick &&
+            <div className="noticeContent">
+              <span>{props.date}</span>
+              <span>{props.content}</span>
+            </div>}
       </div>
   );
 };
