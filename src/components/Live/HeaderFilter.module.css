@@ -2,6 +2,9 @@
     background-color: #1b1b1b;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 160px;
+    padding-left: 160px;
 }
 
 .filterText {
