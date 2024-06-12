@@ -1,0 +1,29 @@
+.iconBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252525;
+  height: 76px;
+
+}
+.icon {
+  width: 10px;
+  height: 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  color: #a4a4a4;
+  align-items: center;
+  font-size: 10px;
+  padding-right: 3rem;
+}
