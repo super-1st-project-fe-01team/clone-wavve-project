@@ -1,0 +1,85 @@
+body {
+    background-color: #1b1b1b;
+    color: #fff;
+    margin: 0;
+    font-family: Notosans, sans-serif;
+}
+
+#headerNav {
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.navWrap {
+    width: 1240px;
+    margin: 0 auto;
+    height: 34px;
+}
+
+.naveWrapList {
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.naveWrapList li {
+    padding: 0 10px;
+}
+
+.naveWrapList li:nth-child(5) {
+    margin-right: 0;
+}
+
+.naveWrapList li a {
+    text-decoration: none;
+    color: #a5a5a5;
+    line-height: 34px;
+}
+
+.navWrap .couponMenu {
+    position: relative;
+    padding-right: 20px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAH1JREFUKBVjYBj6gBHmhe3btzv8//9/JZBv5eXldRckvnPnTsW/f/+eZGRkDPP09DwAEoNrAHG2bt2aAaTy+fn5zX7//v3/+/fvIMVTgYqngeRBAEUDSABo0xSgTUpA5l8g/dTb2xtkCG4AVMQEtOnMtm3brgLZzLhVDl0ZANeHNOWoHfwJAAAAAElFTkSuQmCC") no-repeat 62px 11px;
+}
+
+.couponMenuWrap {
+    position: absolute;
+    width: 87px;
+    top: 34px;
+    right: 0;
+    background-color: #101010;
+    z-index: 999;
+    border-top: 1px solid #2f2f2f;
+}
+
+.over .couponMenuWrap .couponMenuList {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+.couponMenuWrap .couponMenuList {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.couponMenuWrap .couponMenuList {
+    text-align: center;
+}
+
+.couponMenuWrap .couponMenuList div:nth-child(1) {
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.couponMenuWrap .couponMenuList a:hover {
+    color: #fff;
+}
+
+.over {
+    display: block;
+}
