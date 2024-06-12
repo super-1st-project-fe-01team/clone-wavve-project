@@ -1,0 +1,38 @@
+.videoContainer img{
+  position: relative;
+  width: 1240px;
+  height: 598px;
+
+  /*overflow: hidden;*/
+  object-fit: cover;
+}
+
+.videoDetailBox {
+  /*position: absolute;*/
+  display: flex;
+  flex-direction: column;
+  /*height: 100vh;*/
+  /*justify-content: flex-start;*/
+
+}
+
+.logoBox {
+}
+.logoBox img {
+  width: 392px;
+  height: 120px;
+}
+
+.metadataList {
+  display: flex;
+
+  width: 260px;
+
+  justify-content: space-between;
+  color: #a5a5a5;
+}
+
+.ageRestriction {
+  width: 23.99px;
+  height: 23.99px;
+}

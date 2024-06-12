@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./videoDetail.module.css";
+import styles from "./video.module.css";
 import MetadataList from "./MetadataList";
 import EssentialBox from "./EssentialBox";
 import {VideoDetailProps} from "../../../models/Player";

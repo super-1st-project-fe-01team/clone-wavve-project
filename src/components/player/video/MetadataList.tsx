@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./videoDetail.module.css";
+import styles from "./video.module.css";
 import {MetadataListProps} from "../../../models/Player";
 
 const MetadataList:React.FC<MetadataListProps> = (props) => {
