@@ -42,6 +42,8 @@ export interface BottomContentsProps {
 
 export interface Player{
 
+
+  movieId:String;  //movieid
   brandLogoList:String[];  // brand_logolist
 
   backdropImage: string;  // moviegroup_horizontal_logoY_image
