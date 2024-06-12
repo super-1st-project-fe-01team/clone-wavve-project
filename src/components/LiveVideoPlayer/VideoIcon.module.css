@@ -1,6 +1,7 @@
 .videoList{
-  justify-content: start;
+  height: 125px;
   background-color: #1b1b1b;
+
 }
 
 .videoTitle {
@@ -8,14 +9,15 @@
   font-size: 22px;
   padding-top: 15px ;
 }
-ul {
+
+.videoIconList {
   list-style: none;
   padding: 8px;
   display: flex;
-  width: 100%;
+  width: 100%
 }
 
-li {
+.videoIconText {
   display: flex;
   flex-direction: column;
   align-items: center;

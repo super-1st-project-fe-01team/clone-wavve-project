@@ -16,11 +16,11 @@ const VideoPairing:React.FC = () => {
   return (
       <div className={styles.channelPairingArea}>
         <div className={styles.channelPairingTitle}>채널 편성표</div>
-        <ul>
+        <ul className={styles.channelPairingList}>
           {pairing.map((pairing, index) => (
-              <li key={index} className={pairing.title === '뉴스ON' ? 'current' : ''} >
-                <span className="title">{pairing.title}</span>
-                <span className="time">{pairing.time}</span>
+              <li key={index} className={styles.channelPairingTime} >
+                <span>{pairing.title}</span>
+                <span>{pairing.time}</span>
               </li>
           ))}
         </ul>

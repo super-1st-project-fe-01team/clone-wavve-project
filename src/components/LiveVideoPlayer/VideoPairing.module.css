@@ -1,42 +1,27 @@
 .channelPairingArea {
-  background-color: #1b1b1b;color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #1b1b1b;
+  color: #a4a4a4;
 }
 
 .channelPairingTitle {
   color: white;
-  font-size: 22px;
-  padding: 15px ;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-left: 0;
 }
 
-ul {
+.channelPairingList {
   list-style: none;
-  padding: 0;
-}
-
-li {
   display: flex;
-  justify-content: space-between;
+}
+
+.channelPairingTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #333;
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-.current {
-  background-color: #1e90ff;
-}
-
-.title {
-  font-weight: bold;
-}
-
-.time {
-  color: #aaa;
+  padding: 10px  ;
+  border: 1px solid #333;
+  white-space: nowrap;
+  margin-bottom: 15px;
 }
