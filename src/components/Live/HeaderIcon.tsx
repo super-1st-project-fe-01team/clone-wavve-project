@@ -11,11 +11,13 @@ const HeaderIcon: React.FC = () => {
               className={styles.icon}
               src="
           https://www.wavve.com/img/icon-alart-off.d0007c58.svg"
+              alt={''}
           />
           <div>시청예약</div>
           <img
               className={styles.icon}
               src="https://www.wavve.com/img/ic-detail-schd-off.4b017899.svg"
+              alt={''}
           />
           <div>편성표</div>
         </div>

@@ -1,0 +1,12 @@
+.videoArea {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 350px;
+}
+
+.videoPaly {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+}
