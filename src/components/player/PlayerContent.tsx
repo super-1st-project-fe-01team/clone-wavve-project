@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./PlayerContent.module.css";
 import BottomContents from "./bottomContents/BottomContents";
-import Video from "./Video";
-import VideoDetail from "./videoDetail/VideoDetail";
+import VideoDetail from "./video/VideoDetail";
 import {PlayerProps} from "../../models/Player";
+import VideoPicture from "./video/Video";
 
 
 // ####한 페이지에 필요한 값들 (메인페이지에서 넘거야할 값들) #######
@@ -34,7 +34,7 @@ import {PlayerProps} from "../../models/Player";
 const PlayerContentWarp:React.FC<PlayerProps> = (props) => {
   return (
       <div className={styles.videoContentWrap}>
-        <Video videoUrl={props.video.videoUrl}/>
+        <VideoPicture videoPictureUrl={props.video.videoPictureUrl}/>
         <VideoDetail titleImage={props.videoDetail.titleImage}
                      metadataList={props.videoDetail.metadataList}
                      summary={props.videoDetail.summary}

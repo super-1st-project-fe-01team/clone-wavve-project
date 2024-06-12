@@ -1,5 +1,5 @@
-export interface VideoProps {
-  videoUrl: string;
+export interface VideoPictureProps {
+  videoPictureUrl: string;
 }
 
 
@@ -62,7 +62,7 @@ export interface BottomContentsProps {
 
 
 export interface PlayerProps{
-  video: VideoProps;
+  video: VideoPictureProps;
   videoDetail: VideoDetailProps;
   bottomContents: BottomContentsProps;
 }
@@ -74,7 +74,7 @@ export interface PlayerProps{
 // 작업용 mock 데이터
 export const playerData: PlayerProps = {
   video: {
-    videoUrl: "",
+    videoPictureUrl: "https://image.wavve.com/v1/thumbnails/2480_1396_20_80/meta/image/202405/1716451473485481783.jpg",
   },
   videoDetail: {
     titleImage: {
