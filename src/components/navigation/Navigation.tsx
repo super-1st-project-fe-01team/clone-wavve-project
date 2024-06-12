@@ -4,10 +4,8 @@ import styles from "./Navigation.module.css";
 
 
 const Navigation = () => {
-
     const [cateShow, setCateShow] = useState(false);
-
-
+    
     return (
         <header>
             <div id={styles.headerNav}>

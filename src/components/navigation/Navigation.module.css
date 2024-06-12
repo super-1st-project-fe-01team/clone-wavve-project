@@ -11,6 +11,7 @@ body {
 
 .logo {
     margin-right: 78px;
+    line-height: 0;
 }
 
 #headerNav {
@@ -20,6 +21,7 @@ body {
 .gnbWrap {
     position: relative;
     width: 1240px;
+    height: 74px;
     margin: 0 auto;
     display: flex;
 }
@@ -37,13 +39,14 @@ body {
     font-weight: 500;
 }
 
-.gnbWrap li {
+.gnbWrap ul > li {
     padding: 0 20px;
 }
 
 .gnbWrap li a {
     text-decoration: none;
     color: #a5a5a5;
+    line-height: 74px;
 }
 
 .gnbWrap li a:hover {
@@ -57,14 +60,13 @@ body {
 .categoryMenu {
     display: none;
     position: absolute;
-    top: 85px;
+    top: 74px;
     left: 50%;
     margin-left: -355px;
     padding: 30px 20px;
     background-color: #101010;
     min-width: 180px;
     z-index: 1;
-
 }
 
 .categoryMenu button {
@@ -85,13 +87,16 @@ body {
     border-top: 1px solid #2f2f2f;
     list-style: none;
     padding: 15px 0 0 0;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     display: block;
 }
 
 .categoryMenu ul li {
-    padding: 6px 0;
-    height: 100%;
+    padding: 5px 0;
+}
+
+.categoryMenu ul li:first-child {
+    padding-top: 0;
 }
 
 .categoryMenu ul li:last-child {
@@ -102,6 +107,7 @@ body {
     font-size: 14px;
     color: #a5a5a5;
     text-decoration: none;
+    line-height: 20px;
 }
 
 .categoryMenu ul li a:hover {
@@ -118,7 +124,7 @@ body {
     position: absolute;
     top: 50%;
     right: 0;
-    margin-top: -15px;
+    margin-top: -20px;
     overflow: hidden;
     transition: width .2s ease-out;
 }
