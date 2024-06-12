@@ -1,0 +1,20 @@
+
+[
+  {
+    "id":"user1",
+    "password": "supuercoding1"
+  },
+  {
+    "id":"user2",
+    "password": "supuercoding2"
+  },
+  {
+    "id":"test1@super.com",
+    "password": "wavveuser11"
+  },
+  {
+    "id":"test2@super.com",
+    "password": "wavveuser22"
+  }
+]
+
