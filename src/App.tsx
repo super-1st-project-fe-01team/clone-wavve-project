@@ -1,16 +1,15 @@
-import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Login from './components/login'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <></>,
-    children: [{ path: "", element: <></> }],
-  },
-]);
 
-function App() {
-  return <RouterProvider router={router} />;
-}
+const App = () => {
+  return (
+      <div>
+        <Login />
+      </div>
+  )
+};
 
 export default App;
