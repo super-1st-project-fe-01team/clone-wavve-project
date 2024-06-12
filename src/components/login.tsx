@@ -4,16 +4,16 @@ import LoginTop from "./login/top/loginTop";
 import LoginMid from "./login/mid/loginMid";
 import LoginBottom from "./login/bottom/loginBottom";
 
-const login = () => {
+const Login = () => {
   return (
-    <div>
-      <div className={styles.loginLayout}>
-        <LoginTop />
-        <LoginMid />
-        <LoginBottom />
+      <div>
+        <div className={styles.loginLayout}>
+          <LoginTop />
+          <LoginMid />
+          <LoginBottom />
+        </div>
       </div>
-    </div>
   );
 };
 
-export default login;
+export default Login;
