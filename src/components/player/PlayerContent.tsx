@@ -1,47 +1,54 @@
-import React from "react";
 import styles from "./PlayerContent.module.css";
 import BottomContents from "./bottomContents/BottomContents";
 import VideoDetail from "./video/VideoDetail";
-import {PlayerProps} from "../../models/Player";
-import VideoPicture from "./video/Video";
-
-
-// ####한 페이지에 필요한 값들 (메인페이지에서 넘거야할 값들) #######
-// 비디오영상(윗부분 배경)
-
-// VideoDetail=================
-// 제목이미지
-// metadataList: 에피소드, 시청연령, 종류
-// 요약설명? (아직 깜박하고 컴포넌트 안만듬)
-// 공지사항 (있거나 없거나)
-
-// <BottomContents> ==============
-// <Preview>==
-// 제목
-// 부제목
-// 설명
-// 출연
-// <DetailView> ==
-// 썸네일이미지
-// 요약
-// 개요 (방영사,년도 ...)
-// 장르 (#장르1, #장르2...)
-// 출연 (출연자1, 출연자2...)
-// 시청연령이미지
+import React from "react";
+import {Player} from "../../models/Player";
+import {dummyDataList} from "../../data/dummyMovieDatas";
 
 
 
-const PlayerContentWarp:React.FC<PlayerProps> = (props) => {
+const PlayerContentWarp = () => {
+
+  // Link 태그로부터 객체 값을 받아올 수 있나?
+  // 홈 쪽 완성되시면 연결하기
+  // 객체를 그대로 받을 수 있으면 받고, 아니면 아이디 값만 받아서 여기서 새로 찾
+  
+
+  // 일단 임시로 작업할 데이터 하나만 받아왔음.
+  const movieData:Player= dummyDataList[0];
+
+  // // 배경 이미지가 .... 안돼... png로 넣었어야했다...
+  // let imageUrl:string = movieData.backdropImage;
+  // let newImageUrl: string = imageUrl.replace(/\.jpg$/, ".png");
+
+
+  // 임시
+  const backdropImage:string = "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1714110746929872591.webp";
+
+
+
   return (
-      <div className={styles.videoContentWrap}>
-        <VideoPicture videoPictureUrl={props.video.videoPictureUrl}/>
-        <VideoDetail titleImage={props.videoDetail.titleImage}
-                     metadataList={props.videoDetail.metadataList}
-                     summary={props.videoDetail.summary}
-                     notice={props.videoDetail.notice}/>
-        <BottomContents preview={props.bottomContents.preview} detailView={props.bottomContents.detailView}/>
+      <>
+        <div className={styles.videoContentWrap}>
+          <div className={styles.backdropContainer} >
+            <img  src={backdropImage} alt="포스터배경"/>
+            <img  src={"https://www.wavve.com/img/detail_gra_bg.093ce6cc.png"} alt="레이어"/>
+          </div>
+
+          <div className={styles.videoDetailContainer}>
+            <VideoDetail metadataList={movieData.videoDetail.metadataList}
+                         synopsis={movieData.videoDetail.synopsis}/>
+          </div>
+
       </div>
+
+
+        <BottomContents thumbnailImage={movieData.bottomContents.thumbnailImage}
+                        preview={movieData.bottomContents.preview}
+                        detailView={movieData.bottomContents.detailView}/></>
+
   );
-};
+}
+
 
 export default PlayerContentWarp;
