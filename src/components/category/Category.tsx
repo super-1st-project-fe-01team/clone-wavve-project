@@ -21,7 +21,7 @@ const Category = () => {
       <>
         <main>
           <Navigation/>
-          <Categorytitle/>
+          <CategoryTitle/>
           <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
             <div className={styles.contentWrap}>
               <div className={styles.contentTitle}>
