@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./loginMid.module.css";
 import Data from '../../data/data.json';
 
-
-
-
 const LoginMid: React.FC = () => {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
@@ -45,7 +42,6 @@ const LoginMid: React.FC = () => {
       console.log('실패');
     }
   };
-
 
   return (
       <div>

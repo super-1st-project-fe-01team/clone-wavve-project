@@ -3,12 +3,8 @@ import styles from './Home.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import {Outlet} from "react-router-dom"
-import Category from "../category/Category";
-import MainHeader from "../MainHeader";
 import Footer from "../footer/Footer"
-import Utilmenu from "../navigation/Utilmenu";
-import Navigation from "../navigation/Navigation";
+
 
 
 const Home = () => {
@@ -36,29 +32,21 @@ const Home = () => {
 
     return (
         <div>
-        {/*<Utilmenu/>*/}
-        {/*    <Navigation/>*/}
-            {/*<MainHeader/>*/}
             <section className={styles.BodyContainer}>
-                    <div className={styles.SliderContainer}>
-                        <Slider {...settings}>
-                            {images && images.map((value, index) => (
-                                <div style={{width: 1260}}>
-                                    <div className={styles.SliderContent}
-                                         key={index}>
-                                        <img src={value.image} alt={value.product_info}/>
-                                    </div>
+                <div className={styles.SliderContainer}>
+                    <Slider {...settings}>
+                        {images && images.map((value, index) => (
+                            <div style={{width: 1260}}>
+                                <div className={styles.SliderContent}
+                                     key={index}>
+                                    <img src={value.image} alt={value.product_info}/>
                                 </div>
-                            ))}
-                        </Slider>
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
-
-                {/*임시*/}
-                {/*<Category/>*/}
-
             </section>
             <Footer/>
-            {/*<Outlet/>*/}
         </div>
     );
 };
