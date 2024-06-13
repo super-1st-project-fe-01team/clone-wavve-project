@@ -1,6 +1,9 @@
 .iconBar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-right: 160px;
+  padding-left: 160px;
   background-color: #252525;
   height: 76px;
 

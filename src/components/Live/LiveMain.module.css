@@ -1,12 +1,12 @@
 .liveList {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  padding-left: 160px;
+  padding-right: 160px;
   background-color: #1b1b1b;
 }
 
 .thumbnail {
-  justify-content: center;
-  align-items: center;
   padding: 5px;
   height: 90px;
   width: 160px;

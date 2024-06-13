@@ -12,18 +12,24 @@ const categories = [
   '영화/스포츠',
   '키즈/애니',
   '라디오/음악'
-]
+];
 
-const HeaderFilter: React.FC = () => {
-  const [filterCategory, setFilterCategory] = useState <string>();
+interface FilterHeaderProps {
+  onCategoryChange: (category: string) => void;
+}
 
-  const filterChangeHandle = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setFilterCategory(event.target.value);
+const HeaderFilter: React.FC<FilterHeaderProps> = ({onCategoryChange}) => {
+  const [selectCategory, setSelectCategory] = useState <string>('전체 장르');
+
+  const filterChangeHandler = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const category = event.target.value;
+    setSelectCategory(category);
+    onCategoryChange(category);
   };
 
   return <div className={styles.filterBox}>
     <div className={styles.filterText}>전체 채널</div>
-    <select className={styles.filter} value={filterCategory} onChange={filterChangeHandle}>
+    <select className={styles.filter} value={selectCategory} onChange={filterChangeHandler}>
       {categories.map((category, index) => (
           <option key={index} value={category}>
             {category}
