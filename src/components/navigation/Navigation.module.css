@@ -1,0 +1,193 @@
+body {
+    background-color: #1b1b1b;
+    color: #fff;
+    margin: 0;
+    font-family: Notosans, sans-serif;
+}
+
+#headerNav {
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.logo {
+    margin-right: 78px;
+    line-height: 0;
+}
+
+#headerNav {
+    position: relative;
+}
+
+.gnbWrap {
+    position: relative;
+    width: 1240px;
+    height: 74px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.gnbWrap ul {
+    color: #a5a5a5;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.gnbWrap ul > li {
+    padding: 0 20px;
+}
+
+.gnbWrap li a {
+    text-decoration: none;
+    color: #a5a5a5;
+    line-height: 74px;
+}
+
+.gnbWrap li a:hover {
+    color: #fff;
+}
+
+.cateOver .categoryMenu {
+    display: block;
+}
+
+.categoryMenu {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    margin-left: -355px;
+    padding: 30px 20px;
+    background-color: #101010;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.categoryMenu button {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+
+.categoryMenu button:hover {
+    color: #fff;
+    font-weight: 500;
+}
+
+.categoryMenu ul {
+    border-top: 1px solid #2f2f2f;
+    list-style: none;
+    padding: 15px 0 0 0;
+    margin: 15px 0 0 0;
+    display: block;
+}
+
+.categoryMenu ul li {
+    padding: 5px 0;
+}
+
+.categoryMenu ul li:first-child {
+    padding-top: 0;
+}
+
+.categoryMenu ul li:last-child {
+    padding-bottom: 0;
+}
+
+.categoryMenu ul li a {
+    font-size: 14px;
+    color: #a5a5a5;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+.categoryMenu ul li a:hover {
+    color: #fff;
+    font-weight: 500;
+}
+
+.categoryMenu ul li:first-child a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.searchBox {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
+    overflow: hidden;
+    transition: width .2s ease-out;
+}
+
+.searchBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px;
+    z-index: 10;
+}
+
+.searchBox label:before {
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url("https://www.wavve.com/img/icon-search-22.704db5c8.svg") transparent no-repeat;
+    cursor: pointer;
+}
+
+.searchBox span {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.searchBox input {
+    width: 360px;
+    height: 40px;
+    padding: 0 40px;
+    opacity: 1;
+    background: #000;
+    border: 1px solid #232323;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+    transition: width .2s ease-out, opacity .2s ease-out;
+}
+
+.searchBox .btnDel {
+    height: 42px;
+    padding: 8px;
+    /*opacity: 0;*/
+    /*transform: scale(0);*/
+    /*transition: opacity .2s ease-out, transform .2s ease-out;*/
+    background: transparent;
+}
+
+.searchBox .btnDel:before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("https://www.wavve.com/img/icon-search-del-24.9793303c.svg") transparent no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+

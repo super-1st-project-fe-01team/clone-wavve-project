@@ -1,0 +1,27 @@
+.filterBox {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterText {
+    font-weight: 700;
+    color: white;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+.filter {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    font-size: 11px;
+    border: 1px ;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #252525 ;
+    color: #a4a4a4;
+}
