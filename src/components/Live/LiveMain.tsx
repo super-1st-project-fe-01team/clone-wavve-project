@@ -2,6 +2,11 @@ import React, {useState} from "react";
 import styles from "./LiveMain.module.css";
 import HeaderFilter from './HeaderFilter';
 import { title } from "process";
+import Category from "../category/Category";
+import Navigation from "../navigation/Navigation";
+import HeaderIcon from "./HeaderIcon"
+import Footer from "../footer/Footer"
+
 
 export interface Live {
   id: number;
@@ -44,7 +49,6 @@ export const Lives: Live[] = [
   { id: 30, title: '매일경제TV', subtitle: '증시 핫 브리핑', thumbnail: 'https://image.wavve.com/v1/thumbnails/240_135_20_80/live/thumbnail/F2001.webp?timestamp=1718224593197', category: '종편/보도' },
 ];
 
-
 const LiveMain: React.FC = () => {
   const [filterLives, setFilterLives] = useState<Live[]>(Lives)
 
@@ -58,6 +62,8 @@ const LiveMain: React.FC = () => {
 
   return (
       <div>
+        {/*<Navigation/>*/}
+        <HeaderIcon/>
         <HeaderFilter onCategoryChange={handleCategoryChange} />
         <div className={styles.liveList}>
           {filterLives.map(live => (
@@ -70,6 +76,7 @@ const LiveMain: React.FC = () => {
             </div>
         ))}
         </div>
+        <Footer/>
       </div>
   )
 };
