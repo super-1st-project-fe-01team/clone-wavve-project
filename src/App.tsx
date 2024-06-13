@@ -1,8 +1,11 @@
 import "./App.css";
 import {RouterProvider,createBrowserRouter} from "react-router-dom";
 import Category from './components/category/Category'
+// import CategoryContentTitle from "./components/category/CategoryContentTitle";
+import CategoryList from "./components/category/CategoryList";
 import CategoryTitle from "./components/category/CategoryTitle";
 import Footer from "./components/footer/Footer";
+import Home from "./components/home/Home"
 import HeaderFilter from "./components/Live/HeaderFilter";
 import HeaderIcon from "./components/Live/HeaderIcon";
 import LiveMain from "./components/Live/LiveMain";
@@ -24,7 +27,10 @@ const router = createBrowserRouter([
     children: [
       {path: "Category", element: <Category/>},
       {path: "/CategoryTitle", element: <CategoryTitle/>},
+      // {path: "/CategoryContentTitle", element: <CategoryContentTitle/>},
+      {path: "/CategoryList", element: <CategoryList/>},
       {path: "/Footer", element: <Footer/>},
+      {path: "/Home", element: <Home/>},
       {path: "/HeaderFilter", element: <HeaderFilter/>},
       {path: "/HeaderIcon", element: <HeaderIcon/>},
       {path: "/LiveMain", element: <LiveMain/>},
