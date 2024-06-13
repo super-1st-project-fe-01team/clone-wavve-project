@@ -1,38 +1,34 @@
-.videoContainer img{
-  position: relative;
-  width: 1240px;
-  height: 598px;
 
-  /*overflow: hidden;*/
-  object-fit: cover;
+
+.dotItemBox{
+ display: flex;
 }
 
-.videoDetailBox {
-  /*position: absolute;*/
-  display: flex;
-  flex-direction: column;
-  /*height: 100vh;*/
-  /*justify-content: flex-start;*/
+.dotItem{
+  color: #A5A5A5;
+  font-weight: bolder;
 
+  padding: 2px;
+}
+.dotItem img{
+  width:20px;
+  height: 20px;
 }
 
-.logoBox {
-}
-.logoBox img {
-  width: 392px;
-  height: 120px;
+.synopsis{
+  color: #A5A5A5;
+  font-weight: bolder;
 }
 
-.metadataList {
-  display: flex;
+.synopsis button{
+  color: #FFFFFF;
+  font-weight: bolder;
 
-  width: 260px;
-
-  justify-content: space-between;
-  color: #a5a5a5;
+  background-color: transparent;
+  border: none;
 }
 
-.ageRestriction {
-  width: 23.99px;
-  height: 23.99px;
+.titleImageContainer img{
+ width: 400px;
+  margin-bottom: 20px;
 }

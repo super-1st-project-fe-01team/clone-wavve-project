@@ -3,35 +3,31 @@ import styles from "./video.module.css";
 import MetadataList from "./MetadataList";
 import EssentialBox from "./EssentialBox";
 import {VideoDetailProps} from "../../../models/Player";
-import Notice from "./Notice";
+
+
 
 const VideoDetail:React.FC<VideoDetailProps> = (props) => {
 
   // 더보기 버튼 클릭 시 상세정보 뜨게해야함
+  // (현재 상세정보만 넣기로 했으니 스크롤 맨 아래로 보내는 식으로 하면 되지 않을까)
+
+  
+  // 임시
+  const titleImage:string = "https://image.wavve.com/v1/thumbnails/0_0_20_80/meta/image/202404/1714110759310485273.png";
 
   return (
       <div className={styles.videoDetailBox}>
-        <div className={styles.logoBox}>
-          <img
-              src={props.titleImage.titleImageUrl}
-              alt={props.titleImage.titleName}
-          />
-        </div>
-        <MetadataList seasonEpisodeCount={props.metadataList.seasonEpisodeCount}
-                      ageRestriction={props.metadataList.ageRestriction}
-                      category={props.metadataList.category}
-                      isClosedCaptions={props.metadataList.isClosedCaptions}/>
-        
-        {/*CommentList 필요 (없을 수도 있는 값임)*/}
+        <div>브랜드 로고</div>
+        <div className={styles.titleImageContainer}><img src={titleImage}/></div>
+        <MetadataList releaseYear={props.metadataList.releaseYear}
+                                     playTime={props.metadataList.playTime}
+                                     targetAge={props.metadataList.targetAge}
+                                     genres={props.metadataList.genres}/>
 
         <EssentialBox />
-        <div>{props.summary} <button>더보기</button></div>
-
-        {props.notice && <Notice title={props.notice.title}
-                                 date={props.notice.date}
-                                 content={props.notice.content}/>}
+        <div className={styles.synopsis}>{props.synopsis} <button>더보기</button></div>
       </div>
-  );
+  )
 };
 
 export default VideoDetail;
