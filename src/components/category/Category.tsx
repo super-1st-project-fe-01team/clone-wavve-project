@@ -9,10 +9,6 @@ const Category = () => {
         <main>
             <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
                 <div className={styles.contentWrap}>
-                    <div className={styles.contentTitle}>
-                        <h2>오직 웨이브에서 #드라마</h2>
-                        <p>더보기</p>
-                    </div>
                     <div className={styles.categoryList}>
                         <div className={styles.list}>
                             <Link to="#">
