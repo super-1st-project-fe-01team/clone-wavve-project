@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./loginMid.module.css";
-import Data from '../../../data/data.json';
+import Data from '../../data/data.json';
 
 
 const LoginMid: React.FC = () => {

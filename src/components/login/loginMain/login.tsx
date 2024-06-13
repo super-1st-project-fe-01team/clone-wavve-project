@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./login.module.css";
-import LoginTop from "./login/top/loginTop";
-import LoginMid from "./login/mid/loginMid";
-import LoginBottom from "./login/bottom/loginBottom";
+import LoginTop from "../top/loginTop";
+import LoginMid from "../mid/loginMid";
+import LoginBottom from "../bottom/loginBottom";
 
 const Login = () => {
   return (

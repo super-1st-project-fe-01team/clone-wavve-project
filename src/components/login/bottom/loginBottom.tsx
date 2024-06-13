@@ -11,7 +11,7 @@ const loginBottom = () => {
           또는 다른 서비스 계정으로 로그인
         </div>
         <div className={styles.bottomSns}>
-          <img src="/loginIcon/kakao-icon.png" className={styles.kakao}></img>
+          <img src="/src/components/login/bottom/loginIcon/kakao-icon.png" className={styles.kakao}></img>
           <img src="loginIcon/naver-icon.png" className={styles.naver}></img>
           <img src="loginIcon/apple-icon.png" className={styles.apple}></img>
         </div>
