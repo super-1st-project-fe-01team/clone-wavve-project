@@ -1,0 +1,32 @@
+.contentWrap {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.contentTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contentTitle h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contentTitle p {
+    font-size: 14px;
+    color: #a5a5a5;
+    cursor: pointer;
+    padding-right: 18px;
+    background: url("https://www.wavve.com/img/icon-arrow-see-all-default.01e1b585.svg") no-repeat 100%;
+    background-size: 16px auto;
+}
+
+.categoryWrap {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
