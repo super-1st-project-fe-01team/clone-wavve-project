@@ -1,12 +1,17 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import styles from "./Category.module.css";
+import Navigation from "../navigation/Navigation"
+import Categorytitle from "./CategoryTitle"
+import Footer from "../footer/Footer";
 
 const Category = () => {
 
 
     return (
         <main>
+            <Navigation/>
+            <Categorytitle/>
             <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
                 <div className={styles.contentWrap}>
                     <div className={styles.contentTitle}>
@@ -214,6 +219,7 @@ const Category = () => {
                 <div className={`${styles.swiperButton} ${styles.prev}`}></div>
                 <div className={`${styles.swiperButton} ${styles.next}`}></div>
             </section>
+            <Footer/>
         </main>
     );
 };

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink,Outlet} from "react-router-dom";
 import styles from "./Utilmenu.module.css";
 
 const Utilmenu = () => {
@@ -10,7 +10,9 @@ const Utilmenu = () => {
             <div id={styles.headerNav}>
                 <div className={styles.navWrap}>
                     <ul className={styles.naveWrapList}>
-                        <li><Link to="#">로그인</Link></li>
+                        <li><Link to="#"></Link>
+                            <NavLink to="/Login">로그인</NavLink>
+                        </li>
                         <li><Link to="#">이용권</Link></li>
                         <li className={couponShow ? `${styles.over} ${styles.couponMenu}` : styles.couponMenu}
                             onMouseOver={() => {
@@ -37,6 +39,7 @@ const Utilmenu = () => {
                     </ul>
                 </div>
             </div>
+            <Outlet/>
         </header>
     );
 };

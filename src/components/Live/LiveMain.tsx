@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./Live.module.css";
 import { title } from "process";
+import Category from "../category/Category";
+import Navigation from "../navigation/Navigation";
+import HeaderIcon from "./HeaderIcon"
+import HeaderFilter from "./HeaderFilter"
+import Footer from "../footer/Footer"
+
 
 interface Live {
   id: number;
@@ -34,16 +40,22 @@ const Lives: Live[] = [
 
 const LiveMain: React.FC = () => {
   return (
-      <div className={styles.liveList}>
-        {Lives.map(Live => (
-            <div key={Live.id}>
-              <img src={Live.thumbnail} alt={Live.title} className={styles.thumbnail} />
-              <div>
-                <div className={styles.liveTitle}>{Live.title}</div>
-                <div className={styles.liveSubTitle}>{Live.subtitle}</div>
-              </div>
-            </div>
-        ))}
+      <div>
+        <Navigation/>
+        <HeaderIcon/>
+        <HeaderFilter/>
+         <div className={styles.liveList}>
+            {Lives.map(Live => (
+                <div key={Live.id}>
+                  <img src={Live.thumbnail} alt={Live.title} className={styles.thumbnail} />
+                  <div>
+                    <div className={styles.liveTitle}>{Live.title}</div>
+                    <div className={styles.liveSubTitle}>{Live.subtitle}</div>
+                  </div>
+                </div>
+          ))}
+         </div>
+        <Footer/>
       </div>
   )
 };

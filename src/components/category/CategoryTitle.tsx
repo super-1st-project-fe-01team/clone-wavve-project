@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./CategoryTitle.module.css";
 
+
 const CategoryTitle = () => {
     return (
         <main>

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import {Link,NavLink} from "react-router-dom";
 import styles from "./Navigation.module.css";
-
+import Footer from "../footer/Footer";
 
 const Navigation = () => {
     const [cateShow, setCateShow] = useState(false);
@@ -37,7 +37,9 @@ const Navigation = () => {
                                     <button>전체 카테고리 보기</button>
                                     <ul>
                                         <li><Link to="#">추천메뉴</Link></li>
-                                        <li><Link to="#">ORIGINAL</Link></li>
+                                        <li><Link to="#"></Link>
+                                            <NavLink to="/Category">ORIGINAL</NavLink>
+                                        </li>
                                         <li><Link to="#">CLASSIC</Link></li>
                                         <li><Link to="#">드라마</Link></li>
                                         <li><Link to="#">예능</Link></li>
@@ -49,8 +51,12 @@ const Navigation = () => {
                                     </ul>
                                 </div>
                             </li>
-                            <li><Link to="#">LIVE</Link></li>
-                            <li><Link to="#">MY</Link></li>
+                            <li><Link to="#"></Link>
+                                <NavLink to="/LiveMain">LIVE</NavLink>
+                            </li>
+                            <li><Link to="#"></Link>
+                                <NavLink to="/Login">MY</NavLink>
+                            </li>
                         </ul>
                         <div className={`${styles.searchBox} ${styles.active}`}>
                             <label htmlFor="search" className={styles.btnSearch}>
