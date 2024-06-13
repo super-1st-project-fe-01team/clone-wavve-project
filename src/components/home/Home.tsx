@@ -36,8 +36,8 @@ const Home = () => {
 
     return (
         <div>
-        <Utilmenu/>
-            <Navigation/>
+        {/*<Utilmenu/>*/}
+        {/*    <Navigation/>*/}
             {/*<MainHeader/>*/}
             <section className={styles.BodyContainer}>
                     <div className={styles.SliderContainer}>
