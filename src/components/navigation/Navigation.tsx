@@ -19,7 +19,9 @@ const Navigation = () => {
                             </Link>
                         </h1>
                         <ul>
-                            <li><Link to="#">홈</Link></li>
+                            <li><Link to="#"></Link>
+                                <NavLink to="/home">홈</NavLink>
+                            </li>
                             <li className={cateShow ? styles.cateOver : styles.cate}
                                 onMouseOver={() => {
                                     setCateShow(true)
@@ -70,7 +72,6 @@ const Navigation = () => {
                     </div>
                 </div>
             </div>
-            <Outlet />
         </header>
 
     );

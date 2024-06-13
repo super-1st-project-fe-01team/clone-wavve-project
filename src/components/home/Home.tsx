@@ -3,15 +3,13 @@ import styles from './Home.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import PlayerContentWarp from "../player/PlayerContent";
+import {Outlet} from "react-router-dom"
 import Category from "../category/Category";
 import MainHeader from "../MainHeader";
-import Utilmenu from "../navigation/Utilmenu"
+import Footer from "../footer/Footer"
+import Utilmenu from "../navigation/Utilmenu";
 import Navigation from "../navigation/Navigation";
-import CategoryContentTitle from "../category/CategoryContentTitle"
-import CategoryTitle from "../category/CategoryTitle";
-import CategoryList from "../category/CategoryList";
-import Footer from "../footer/Footer";
+
 
 const Home = () => {
     let [images, setImages] = useState([
@@ -38,8 +36,8 @@ const Home = () => {
 
     return (
         <div>
-            {/*<Utilmenu/>*/}
-            {/*<Navigation/>*/}
+        <Utilmenu/>
+            <Navigation/>
             {/*<MainHeader/>*/}
             <section className={styles.BodyContainer}>
                     <div className={styles.SliderContainer}>
@@ -56,9 +54,11 @@ const Home = () => {
                 </div>
 
                 {/*임시*/}
-                <Category/>
+                {/*<Category/>*/}
 
             </section>
+            <Footer/>
+            {/*<Outlet/>*/}
         </div>
     );
 };

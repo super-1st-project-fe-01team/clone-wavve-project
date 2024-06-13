@@ -20,7 +20,6 @@ const Category = () => {
   return (
       <>
         <main>
-          <Navigation/>
           <CategoryTitle/>
           <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
             <div className={styles.contentWrap}>
