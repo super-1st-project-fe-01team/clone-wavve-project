@@ -20,7 +20,7 @@ export const DELIVERATION_INFO_IMAGES :string[]=[
     "https://www.wavve.com/img/element-icons-72-x-72-ic-rating-content-violence.52b00685.svg",
     "https://www.wavve.com/img/element-icons-72-x-72-ic-rating-content-dialogue.92f04d3f.svg",
     "https://www.wavve.com/img/element-icons-72-x-72-ic-rating-content-horror.d3a4e071.svg",
-    "https://www.wavve.com/img/element-icons-72-x-72-ic-rating-content-drug.2af18a6b.svg,",
+    "https://www.wavve.com/img/element-icons-72-x-72-ic-rating-content-drug.2af18a6b.svg",
     "https://www.wavve.com/img/element-icons-72-x-72-ic-rating-content-imitation.b4fb59a4.svg",
 ];
 
