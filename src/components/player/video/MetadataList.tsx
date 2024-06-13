@@ -1,22 +1,25 @@
 import React from "react";
-import styles from "./video.module.css";
 import {MetadataListProps} from "../../../models/Player";
+import {AGE_IMAGES} from "../../../data/logoImages";
+import styles from "../video/video.module.css"
 
 const MetadataList:React.FC<MetadataListProps> = (props) => {
+
   return (
-      <div className={styles.metadataList}>
-        <div className="dot-item seasonEpisodeCount">{props.seasonEpisodeCount}</div>
-        <div className="dot-item">
-          <img
-              className={styles.ageRestriction}
-              src={props.ageRestriction.ageImage}
-              alt={props.ageRestriction.ageString}
-          />
-        </div>
-        <div className="dot-item category">드라마</div>
-        <div className="dot-item">
-          {props.isClosedCaptions &&  <img src ="나중에 자막이미지넣기" alt="자막제공여부" />}
-        </div>
+    // <div className={styles.dotItemBox}>
+    //   <span className={styles.dotItem}>{props.releaseYear}</span>
+    //   <span className={styles.dotItem}>{`·${Math.floor(props.playTime/60)}분`}·</span>
+    //   <span className={styles.dotItem}><img src={AGE_IMAGES[props.targetAge]}/></span>
+    //   <span className={styles.dotItem}>{`·${props.genres[0]}`}</span>
+    // </div>
+
+      <div className={styles.dotItemBox}>
+        <div className={styles.dotItem}>{props.releaseYear}년</div>
+        <div className={styles.dotItem}>·</div>
+        <div className={styles.dotItem}>{`${Math.floor(props.playTime/60)}분`}</div>
+        <div className={styles.dotItem}>·</div>
+        <div className={styles.dotItem}><img src={AGE_IMAGES[props.targetAge]}/></div>
+        <div className={styles.dotItem}>{`·${props.genres[0]}`}</div>
       </div>
   );
 };
