@@ -1,8 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import styles from "./CategoryList.module.css";
+import Slider from "react-slick";
+import "../slick-theme.css";
+import "../slick.css";
 
 const CategoryList = () => {
+
     return (
         <main>
             <section className={styles.categoryListContentWrap}>
