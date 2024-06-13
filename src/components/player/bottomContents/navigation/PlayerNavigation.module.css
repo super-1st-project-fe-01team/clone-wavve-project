@@ -1,0 +1,49 @@
+.playerNav {
+  border-bottom: 1px solid #2f2f2f;
+  background-color: #1B1B1B;
+  height: 67.43px;
+
+  display: flex;
+}
+
+.playerNav button {
+  background-color: transparent;
+  cursor: pointer;
+  color: #a5a5a5;
+  border: none;
+  font-weight: bolder;
+
+}
+
+
+.playerNavItem{
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  padding: 0px 8px 0px 10px;
+
+}
+
+
+
+.playerNavItemActive{
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+
+  border-bottom: 4px solid #1351f9;
+}
+
+
+.playerNavItem button{
+  font-size: 18px;
+}
+
+
+.playerNavItemActive button{
+  color: #FFFFFF;
+  font-size: 18px;
+}

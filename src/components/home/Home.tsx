@@ -3,10 +3,11 @@ import styles from './Home.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import PlayerContentWarp from "../player/PlayerContent";
+import Category from "../category/Category";
 import MainHeader from "../MainHeader";
 import Utilmenu from "../navigation/Utilmenu"
 import Navigation from "../navigation/Navigation";
-import Category from "../category/Category";
 import CategoryContentTitle from "../category/CategoryContentTitle"
 import CategoryTitle from "../category/CategoryTitle";
 import CategoryList from "../category/CategoryList";
@@ -53,6 +54,10 @@ const Home = () => {
                             ))}
                         </Slider>
                 </div>
+
+                {/*임시*/}
+                <Category/>
+
             </section>
         </div>
     );

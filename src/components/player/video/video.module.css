@@ -1,0 +1,34 @@
+
+
+.dotItemBox{
+ display: flex;
+}
+
+.dotItem{
+  color: #A5A5A5;
+  font-weight: bolder;
+
+  padding: 2px;
+}
+.dotItem img{
+  width:20px;
+  height: 20px;
+}
+
+.synopsis{
+  color: #A5A5A5;
+  font-weight: bolder;
+}
+
+.synopsis button{
+  color: #FFFFFF;
+  font-weight: bolder;
+
+  background-color: transparent;
+  border: none;
+}
+
+.titleImageContainer img{
+ width: 400px;
+  margin-bottom: 20px;
+}

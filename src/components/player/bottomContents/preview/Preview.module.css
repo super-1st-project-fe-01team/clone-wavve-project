@@ -1,0 +1,34 @@
+.previewViewContent {
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.previewDetailBox {
+  padding: 30px;
+}
+
+.previewDetailBox div {
+  padding: 8px;
+}
+
+.previewTitle {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.previewsubTitle {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.previewExplanation {
+  color: #a5a5a5;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.actorInfo {
+  color: #a5a5a5;
+  font-weight: bolder;
+  font-size: 13px;
+}
