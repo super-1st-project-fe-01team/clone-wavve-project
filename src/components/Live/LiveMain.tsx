@@ -41,7 +41,7 @@ const Lives: Live[] = [
 const LiveMain: React.FC = () => {
   return (
       <div>
-        <Navigation/>
+        {/*<Navigation/>*/}
         <HeaderIcon/>
         <HeaderFilter/>
          <div className={styles.liveList}>

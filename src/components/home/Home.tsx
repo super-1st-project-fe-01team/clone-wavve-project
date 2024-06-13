@@ -3,6 +3,14 @@ import styles from './Home.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import MainHeader from "../MainHeader";
+import Utilmenu from "../navigation/Utilmenu"
+import Navigation from "../navigation/Navigation";
+import Category from "../category/Category";
+import CategoryContentTitle from "../category/CategoryContentTitle"
+import CategoryTitle from "../category/CategoryTitle";
+import CategoryList from "../category/CategoryList";
+import Footer from "../footer/Footer";
 
 const Home = () => {
     let [images, setImages] = useState([
@@ -26,21 +34,25 @@ const Home = () => {
     };
 
     return (
-        <section className={styles.BodyContainer}>
-            <div className={styles.SliderContainer}>
-                <Slider {...settings}>
-                    {images && images.map((value, index) => (
-                        <div style={{width: 1260}}>
-                            <div className={styles.SliderContent}
-                                 key={index}>
-                                <img src={value.image} alt={value.product_info}/>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-
-            </div>
-        </section>
+        <div>
+            {/*<Utilmenu/>*/}
+            {/*<Navigation/>*/}
+            {/*<MainHeader/>*/}
+            <section className={styles.BodyContainer}>
+                    <div className={styles.SliderContainer}>
+                        <Slider {...settings}>
+                            {images && images.map((value, index) => (
+                                <div style={{width: 1260}}>
+                                    <div className={styles.SliderContent}
+                                         key={index}>
+                                        <img src={value.image} alt={value.product_info}/>
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
+                </div>
+            </section>
+        </div>
     );
 };
 

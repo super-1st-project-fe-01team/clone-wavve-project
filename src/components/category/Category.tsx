@@ -1,24 +1,23 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import styles from "./Category.module.css";
-import Navigation from "../navigation/Navigation"
-import Categorytitle from "./CategoryTitle"
-import Footer from "../footer/Footer";
-import Utilmenu from "../navigation/Utilmenu";
+import CategoryTitle from "./CategoryTitle"
 import CategoryContentTitle from "./CategoryContentTitle";
 import CategoryList from "./CategoryList";
+import Footer from "../footer/Footer";
+
+
 
 const Category = () => {
 
 
     return (
         <main>
-            <Utilmenu/>
-            <Navigation/>
-            <Categorytitle/>
+            <CategoryTitle/>
+            <CategoryContentTitle/>
+            <Category/>
             {/*<CategoryContentTitle/>*/}
-            {/*<CategoryContentTitle/>*/}
-            <CategoryList/>
+            {/*<CategoryList/>*/}
             <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
                 <div className={styles.contentWrap}>
                     <div className={styles.categoryList}>

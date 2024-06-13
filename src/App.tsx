@@ -1,7 +1,7 @@
 import "./App.css";
 import {RouterProvider,createBrowserRouter} from "react-router-dom";
 import Category from './components/category/Category'
-// import CategoryContentTitle from "./components/category/CategoryContentTitle";
+import CategoryContentTitle from "./components/category/CategoryContentTitle";
 import CategoryList from "./components/category/CategoryList";
 import CategoryTitle from "./components/category/CategoryTitle";
 import Footer from "./components/footer/Footer";
@@ -18,31 +18,32 @@ import LoginMid from "./components/login/mid/loginMid"
 import LoginBottom from "./components/login/bottom/loginBottom"
 import Navigation from "./components/navigation/Navigation"
 import Utilmenu from "./components/navigation/Utilmenu"
+import MainHeader from "./components/MainHeader";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Utilmenu/>,
+    element: <MainHeader/>,
     children: [
-      {path: "Category", element: <Category/>},
-      {path: "/CategoryTitle", element: <CategoryTitle/>},
+      {path: "/Category", element: <Category/>},
+      // {path: "/CategoryTitle", element: <CategoryTitle/>},
       // {path: "/CategoryContentTitle", element: <CategoryContentTitle/>},
-      {path: "/CategoryList", element: <CategoryList/>},
-      {path: "/Footer", element: <Footer/>},
+      // {path: "/CategoryList", element: <CategoryList/>},
+      // {path: "/Footer", element: <Footer/>},
       {path: "/Home", element: <Home/>},
-      {path: "/HeaderFilter", element: <HeaderFilter/>},
-      {path: "/HeaderIcon", element: <HeaderIcon/>},
+      // {path: "/HeaderFilter", element: <HeaderFilter/>},
+      // {path: "/HeaderIcon", element: <HeaderIcon/>},
       {path: "/LiveMain", element: <LiveMain/>},
       {path: "/Video", element: <Video/>},
-      {path: "/VideoIcon", element: <VideoIcon/>},
-      {path: "//VideoPairing", element: <VideoPairing/>},
+      // {path: "/VideoIcon", element: <VideoIcon/>},
+      // {path: "//VideoPairing", element: <VideoPairing/>},
       {path: "/login", element: <Login/>},
-      {path: "/loginTop", element: <LoginTop/>},
-      {path: "/LoginMid", element: <LoginMid/>},
-      {path: "/LoginBottom", element: <LoginBottom/>},
-      {path: "/Navigation", element: <Navigation/>},
-      {path: "/Utilmenu", element: <Utilmenu/>}
+      // {path: "/loginTop", element: <LoginTop/>},
+      // {path: "/LoginMid", element: <LoginMid/>},
+      // {path: "/LoginBottom", element: <LoginBottom/>},
+      // {path: "/Navigation", element: <Navigation/>},
+      // {path: "/Utilmenu", element: <Utilmenu/>}
     ],
   },
 ]);
