@@ -1,9 +1,6 @@
 import React, {useState} from "react";
 import styles from "./LiveMain.module.css";
 import HeaderFilter from './HeaderFilter';
-import { title } from "process";
-import Category from "../category/Category";
-import Navigation from "../navigation/Navigation";
 import HeaderIcon from "./HeaderIcon"
 import Footer from "../footer/Footer"
 

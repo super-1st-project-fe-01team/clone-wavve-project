@@ -53,7 +53,7 @@ const Navigation = () => {
                                 </div>
                             </li>
                             <li><Link to="#"></Link>
-                                <NavLink to="/LiveMain">LIVE</NavLink>
+                                <NavLink to="/live-main">LIVE</NavLink>
                             </li>
                             <li><Link to="#"></Link>
                                 <NavLink to="/Login">MY</NavLink>

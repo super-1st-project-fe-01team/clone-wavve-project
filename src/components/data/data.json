@@ -2,11 +2,11 @@
 [
   {
     "id":"user1",
-    "password": "supuercoding1"
+    "password": "supercoding1"
   },
   {
     "id":"user2",
-    "password": "supuercoding2"
+    "password": "supercoding2"
   },
   {
     "id":"test1@super.com",
