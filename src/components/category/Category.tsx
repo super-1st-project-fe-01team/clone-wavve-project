@@ -6,47 +6,47 @@ import Footer from "../footer/Footer";
 import {dummyDataList} from "../../data/dummyMovieDatas";
 import {Player} from "../../models/Player";
 import PlayerItem from "../player/PlayerItem";
+import CategoryContentTitle from "./CategoryContentTitle";
+import BadgeImg from "./BadgeImg";
 
 
 const Category = () => {
 
-    const playerList:Player[] = dummyDataList;
+    const playerList: Player[] = dummyDataList;
 
 
-  return (
-      <>
-        <main>
-          <CategoryTitle/>
-          <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
-            <div className={styles.contentWrap}>
-              <div className={styles.contentTitle}>
-                <h2>오직 웨이브에서 #드라마</h2>
-                <p>더보기</p>
-              </div>
-              <div className={styles.categoryList}>
-                {playerList.map((player) => {
-                  console.log(`아이디값:  ${player.movieId}`);
-                  return (
-                      <Link to={`/player/${player.movieId}`}>
-                        <div className={styles.list}>
-                          <PlayerItem
-                              movieId={player.movieId}
-                              brandLogoList={player.brandLogoList}
-                              backdropImage={player.backdropImage}
-                              videoDetail={player.videoDetail}
-                              bottomContents={player.bottomContents}
-                          />
+    return (
+        <>
+            <main>
+                <CategoryTitle/>
+                <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
+                    <div className={styles.contentWrap}>
+                        <CategoryContentTitle/>
+                        <div className={styles.categoryList}>
+                            {playerList.map((player) => {
+                                console.log(`아이디값:  ${player.movieId}`);
+                                return (
+                                    <Link to={`/player/${player.movieId}`}>
+                                        <div className={styles.list}>
+                                            <PlayerItem
+                                                movieId={player.movieId}
+                                                brandLogoList={player.brandLogoList}
+                                                backdropImage={player.backdropImage}
+                                                videoDetail={player.videoDetail}
+                                                bottomContents={player.bottomContents}
+                                            />
+                                            <BadgeImg/>
+                                        </div>
+                                    </Link>
+                                );
+                            })}
                         </div>
-                      </Link>
-                  );
-                })}
-            </div>
-          </div>
-          <div className={`${styles.swiperButton} ${styles.prev}`}></div>
-          <div className={`${styles.swiperButton} ${styles.next}`}></div>
-        </section>
-       <Footer/>
-        </main>
+                    </div>
+                    <div className={`${styles.swiperButton} ${styles.prev}`}></div>
+                    <div className={`${styles.swiperButton} ${styles.next}`}></div>
+                </section>
+                <Footer/>
+            </main>
         </>
     );
 };
