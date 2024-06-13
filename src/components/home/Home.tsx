@@ -22,7 +22,9 @@ const Home = () => {
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     };
 
     return (
