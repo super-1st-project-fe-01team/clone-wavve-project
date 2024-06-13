@@ -15,6 +15,8 @@ import LoginMid from "./components/login/mid/loginMid"
 import LoginBottom from "./components/login/bottom/loginBottom"
 import Navigation from "./components/navigation/Navigation"
 import Utilmenu from "./components/navigation/Utilmenu"
+import PlayerContentWarp from "./components/player/PlayerContent";
+import PlayerItem from "./components/player/PlayerItem";
 
 
 const router = createBrowserRouter([
@@ -22,21 +24,22 @@ const router = createBrowserRouter([
     path: "/",
     element: <Utilmenu/>,
     children: [
-      {path: "Category", element: <Category/>},
-      {path: "/CategoryTitle", element: <CategoryTitle/>},
-      {path: "/Footer", element: <Footer/>},
-      {path: "/HeaderFilter", element: <HeaderFilter/>},
-      {path: "/HeaderIcon", element: <HeaderIcon/>},
-      {path: "/LiveMain", element: <LiveMain/>},
-      {path: "/Video", element: <Video/>},
-      {path: "/VideoIcon", element: <VideoIcon/>},
-      {path: "//VideoPairing", element: <VideoPairing/>},
+      {path: "/category", element: <Category/>},
+      {path: "/category-title", element: <CategoryTitle/>},
+      {path: "/footer", element: <Footer/>},
+      {path: "/header-filter", element: <HeaderFilter/>},
+      {path: "/header-icon", element: <HeaderIcon/>},
+      {path: "/live-main", element: <LiveMain/>},
+      {path: "/video", element: <Video/>},
+      {path: "/video-icon", element: <VideoIcon/>},
+      {path: "/video-pairing", element: <VideoPairing/>},
       {path: "/login", element: <Login/>},
-      {path: "/loginTop", element: <LoginTop/>},
-      {path: "/LoginMid", element: <LoginMid/>},
-      {path: "/LoginBottom", element: <LoginBottom/>},
-      {path: "/Navigation", element: <Navigation/>},
-      {path: "/Utilmenu", element: <Utilmenu/>}
+      {path: "/login-top", element: <LoginTop/>},
+      {path: "/login-mid", element: <LoginMid/>},
+      {path: "/login-bottom", element: <LoginBottom/>},
+      {path: "/navigation", element: <Navigation/>},
+      {path: "/utilmenu", element: <Utilmenu/>},
+      {path:"/player/:id", element:<PlayerContentWarp/>},
     ],
   },
 ]);

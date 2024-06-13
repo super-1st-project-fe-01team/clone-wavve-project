@@ -4,45 +4,47 @@ import VideoDetail from "./video/VideoDetail";
 import React from "react";
 import {Player} from "../../models/Player";
 import {dummyDataList} from "../../data/dummyMovieDatas";
+import {useLocation, useParams} from "react-router-dom";
 
 
+// interface RouterParam{
+//   id:string //대문자 포함됨
+// }
 
-const PlayerContentWarp = () => {
+const PlayerContentWarp:React.FC = () => {
 
-  // Link 태그로부터 객체 값을 받아올 수 있나?
-  // 홈 쪽 완성되시면 연결하기
-  // 객체를 그대로 받을 수 있으면 받고, 아니면 아이디 값만 받아서 여기서 새로 찾
-  
+ const {id}= useParams<string>(); //?????? 아놔..
 
-  // 일단 임시로 작업할 데이터 하나만 받아왔음.
-  const movieData:Player= dummyDataList[0];
-  console.log(movieData)
+  const movieData: Player | undefined = dummyDataList.find((player:Player) => player.movieId === id);
+
+  console.log(movieData);
+
 
   // 임시
   const backdropImage:string = "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1714110746929872591.webp";
 
 
-
   return (
       <>
-        <div className={styles.videoContentWrap}>
-          <div className={styles.backdropContainer} >
-            <img  src={backdropImage} alt="포스터배경"/>
-            <img  src={"https://www.wavve.com/img/detail_gra_bg.093ce6cc.png"} alt="레이어"/>
-          </div>
+      {/*  <div className={styles.videoContentWrap}>*/}
+      {/*    <div className={styles.backdropContainer} >*/}
+      {/*      <img  src={backdropImage} alt="포스터배경"/>*/}
+      {/*      <img  src={"https://www.wavve.com/img/detail_gra_bg.093ce6cc.png"} alt="레이어"/>*/}
+      {/*    </div>*/}
 
-          <div className={styles.videoDetailContainer}>
-            <VideoDetail titleImage={movieData.videoDetail.titleImage}
-                         metadataList={movieData.videoDetail.metadataList}
-                         synopsis={movieData.videoDetail.synopsis}/>
-          </div>
+      {/*    <div className={styles.videoDetailContainer}>*/}
+      {/*      <VideoDetail titleImage={movieData?.videoDetail.titleImage}*/}
+      {/*                   metadataList={movieData?.videoDetail.metadataList}*/}
+      {/*                   synopsis={movieData?.videoDetail.synopsis}/>*/}
+      {/*    </div>*/}
 
-      </div>
+      {/*</div>*/}
 
 
-        <BottomContents thumbnailImage={movieData.bottomContents.thumbnailImage}
-                        preview={movieData.bottomContents.preview}
-                        detailView={movieData.bottomContents.detailView}/></>
+      {/*  <BottomContents thumbnailImage={movieData.bottomContents.thumbnailImage}*/}
+      {/*                  preview={movieData.bottomContents.preview}*/}
+      {/*                  detailView={movieData.bottomContents.detailView}/>*/}
+      </>
 
   );
 }

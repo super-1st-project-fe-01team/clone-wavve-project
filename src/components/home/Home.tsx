@@ -3,6 +3,8 @@ import styles from './Home.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import PlayerContentWarp from "../player/PlayerContent";
+import Category from "../category/Category";
 
 const Home = () => {
     let [images, setImages] = useState([
@@ -38,8 +40,11 @@ const Home = () => {
                         </div>
                     ))}
                 </Slider>
-
             </div>
+            
+            {/*임시*/}
+            <Category/>
+
         </section>
     );
 };
