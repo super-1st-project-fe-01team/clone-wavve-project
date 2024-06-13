@@ -10,15 +10,15 @@ const BottomContents:React.FC<BottomContentsProps> = (props) => {
   // 꼬였다..
 
   // 임시
-  const image:string="https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202404/1714110749654413518.webp";
-
+  const image1:string="https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202404/1714110749654413518.webp";
+  const image2:string="image.wavve.com/meta/image/202404/1714110749654413518.jpg";
   return (
       <div>
         <PlayerNavigation />
         <div>
 
           <div className={styles.detailViewBox}>
-            <div className={styles.thumbnailContainer}> <img src={image}/> </div>
+            <div className={styles.thumbnailContainer}> <img src={props.thumbnailImage}/> </div>
 
             <div className={styles.detailInfoBox}>
               {/*<Preview title={props.preview.title}*/}

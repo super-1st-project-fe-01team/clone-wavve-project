@@ -1,5 +1,6 @@
 
 export interface VideoDetailProps {
+  titleImage:string; // moviegrouptitlelogoimage
   metadataList: MetadataListProps;
   synopsis: string;  // synopsis
 }
@@ -44,7 +45,7 @@ export interface Player{
 
 
   movieId:String;  //movieid
-  brandLogoList:String[];  // brand_logolist
+  brandLogoList:String[];  // brand_logolist  ex) "only"
 
   backdropImage: string;  // moviegroup_horizontal_logoY_image
   videoDetail: VideoDetailProps;

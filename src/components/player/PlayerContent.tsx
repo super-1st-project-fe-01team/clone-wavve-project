@@ -16,11 +16,7 @@ const PlayerContentWarp = () => {
 
   // 일단 임시로 작업할 데이터 하나만 받아왔음.
   const movieData:Player= dummyDataList[0];
-
-  // // 배경 이미지가 .... 안돼... png로 넣었어야했다...
-  // let imageUrl:string = movieData.backdropImage;
-  // let newImageUrl: string = imageUrl.replace(/\.jpg$/, ".png");
-
+  console.log(movieData)
 
   // 임시
   const backdropImage:string = "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1714110746929872591.webp";
@@ -36,7 +32,8 @@ const PlayerContentWarp = () => {
           </div>
 
           <div className={styles.videoDetailContainer}>
-            <VideoDetail metadataList={movieData.videoDetail.metadataList}
+            <VideoDetail titleImage={movieData.videoDetail.titleImage}
+                         metadataList={movieData.videoDetail.metadataList}
                          synopsis={movieData.videoDetail.synopsis}/>
           </div>
 
