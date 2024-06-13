@@ -1,8 +1,11 @@
 import "./App.css";
 import {RouterProvider,createBrowserRouter} from "react-router-dom";
 import Category from './components/category/Category'
+import CategoryContentTitle from "./components/category/CategoryContentTitle";
+import CategoryList from "./components/category/CategoryList";
 import CategoryTitle from "./components/category/CategoryTitle";
 import Footer from "./components/footer/Footer";
+import Home from "./components/home/Home"
 import HeaderFilter from "./components/Live/HeaderFilter";
 import HeaderIcon from "./components/Live/HeaderIcon";
 import LiveMain from "./components/Live/LiveMain";
@@ -15,31 +18,32 @@ import LoginMid from "./components/login/mid/loginMid"
 import LoginBottom from "./components/login/bottom/loginBottom"
 import Navigation from "./components/navigation/Navigation"
 import Utilmenu from "./components/navigation/Utilmenu"
-import PlayerContentWarp from "./components/player/PlayerContent";
-import PlayerItem from "./components/player/PlayerItem";
+import MainHeader from "./components/MainHeader";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Utilmenu/>,
+    element: <MainHeader/>,
     children: [
-      {path: "/category", element: <Category/>},
-      {path: "/category-title", element: <CategoryTitle/>},
-      {path: "/footer", element: <Footer/>},
-      {path: "/header-filter", element: <HeaderFilter/>},
-      {path: "/header-icon", element: <HeaderIcon/>},
-      {path: "/live-main", element: <LiveMain/>},
-      {path: "/video", element: <Video/>},
-      {path: "/video-icon", element: <VideoIcon/>},
-      {path: "/video-pairing", element: <VideoPairing/>},
+      {path: "/Category", element: <Category/>},
+      // {path: "/CategoryTitle", element: <CategoryTitle/>},
+      // {path: "/CategoryContentTitle", element: <CategoryContentTitle/>},
+      // {path: "/CategoryList", element: <CategoryList/>},
+      // {path: "/Footer", element: <Footer/>},
+      {path: "/Home", element: <Home/>},
+      // {path: "/HeaderFilter", element: <HeaderFilter/>},
+      // {path: "/HeaderIcon", element: <HeaderIcon/>},
+      {path: "/LiveMain", element: <LiveMain/>},
+      {path: "/Video", element: <Video/>},
+      // {path: "/VideoIcon", element: <VideoIcon/>},
+      // {path: "//VideoPairing", element: <VideoPairing/>},
       {path: "/login", element: <Login/>},
-      {path: "/login-top", element: <LoginTop/>},
-      {path: "/login-mid", element: <LoginMid/>},
-      {path: "/login-bottom", element: <LoginBottom/>},
-      {path: "/navigation", element: <Navigation/>},
-      {path: "/utilmenu", element: <Utilmenu/>},
-      {path:"/player/:id", element:<PlayerContentWarp/>},
+      // {path: "/loginTop", element: <LoginTop/>},
+      // {path: "/LoginMid", element: <LoginMid/>},
+      // {path: "/LoginBottom", element: <LoginBottom/>},
+      // {path: "/Navigation", element: <Navigation/>},
+      // {path: "/Utilmenu", element: <Utilmenu/>}
     ],
   },
 ]);

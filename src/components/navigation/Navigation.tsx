@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import {Link,NavLink} from "react-router-dom";
+import {Link, NavLink, Outlet, Route} from "react-router-dom";
 import styles from "./Navigation.module.css";
-import Footer from "../footer/Footer";
 
 const Navigation = () => {
     const [cateShow, setCateShow] = useState(false);
@@ -71,6 +70,7 @@ const Navigation = () => {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </header>
 
     );

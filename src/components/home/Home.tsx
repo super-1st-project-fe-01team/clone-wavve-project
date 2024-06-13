@@ -5,6 +5,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import PlayerContentWarp from "../player/PlayerContent";
 import Category from "../category/Category";
+import MainHeader from "../MainHeader";
+import Utilmenu from "../navigation/Utilmenu"
+import Navigation from "../navigation/Navigation";
+import CategoryContentTitle from "../category/CategoryContentTitle"
+import CategoryTitle from "../category/CategoryTitle";
+import CategoryList from "../category/CategoryList";
+import Footer from "../footer/Footer";
 
 const Home = () => {
     let [images, setImages] = useState([
@@ -24,28 +31,35 @@ const Home = () => {
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     };
 
     return (
-        <section className={styles.BodyContainer}>
-            <div className={styles.SliderContainer}>
-                <Slider {...settings}>
-                    {images && images.map((value, index) => (
-                        <div style={{width: 1260}}>
-                            <div className={styles.SliderContent}
-                                 key={index}>
-                                <img src={value.image} alt={value.product_info}/>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-            
-            {/*임시*/}
-            <Category/>
+        <div>
+            {/*<Utilmenu/>*/}
+            {/*<Navigation/>*/}
+            {/*<MainHeader/>*/}
+            <section className={styles.BodyContainer}>
+                    <div className={styles.SliderContainer}>
+                        <Slider {...settings}>
+                            {images && images.map((value, index) => (
+                                <div style={{width: 1260}}>
+                                    <div className={styles.SliderContent}
+                                         key={index}>
+                                        <img src={value.image} alt={value.product_info}/>
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
+                </div>
 
-        </section>
+                {/*임시*/}
+                <Category/>
+
+            </section>
+        </div>
     );
 };
 
