@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 160px;
-  padding-left: 160px;
+  padding-left: 200px;
+  padding-right: 255px;
   background-color: #252525;
-  height: 76px;
+  height: 100px;
 
 }
 .icon {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .text {
@@ -18,7 +18,7 @@
   justify-content: space-between;
   color: white;
   align-items: center;
-  font-size: 18px;
+  font-size: 26px;
   padding-left: 10px;
 }
 
@@ -27,6 +27,6 @@
   justify-content: space-between;
   color: #a4a4a4;
   align-items: center;
-  font-size: 10px;
-  padding-right: 3rem;
+  font-size: 16px;
+  padding: 10px;
 }

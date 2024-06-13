@@ -1,20 +1,21 @@
 .channelPairingArea {
   background-color: #1b1b1b;
   color: #a4a4a4;
-  padding-right: 160px;
-  padding-left: 160px;
+  padding-left: 210px;
+  padding-right: 265px;
   position: relative;
 }
 
 .channelPairingTitle {
   color: white;
-  font-size: 15px;
-  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
   padding-left: 0;
 }
 
 .channelPairingListContainer {
-  width: 950px;
+  width: 1150px;
   overflow: hidden;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .channelPairingTimeArea {
-  flex: 0 0 200px ;
+  flex: 0 0 250px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,8 +53,8 @@
 
 }
 .clockIcon{
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .arrow {
@@ -69,16 +70,16 @@
 
 .leftArrow {
   left: 0;
-  margin-left: 120px;
+  margin-left: 170px;
 }
 
 .rightArrow {
   right: 0;
-  margin-right: 120px;
+  margin-right: 470px;
 }
 
 .ArrowIcon {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 35px;
 }
 
