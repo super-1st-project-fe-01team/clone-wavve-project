@@ -1,6 +1,6 @@
 import {Player} from "../models/Player";
 
-const dummyDataList:Player[] = [{
+export const dummyDataList:Player[] = [{
   "movieId": "MV_EB01_EB000000102",
   "brandLogoList": [],
   "backdropImage": "image.wavve.com/meta/image/202405/1716875897913054211.jpg",
