@@ -15,7 +15,36 @@
   height: 48px;
 }
 
-.iconBox ul {
+.iconBox {
   display: flex;
   align-items: center;
+
+  /*임시*/
+  padding: 15px;
+}
+
+
+.iconItem{
+  margin-right: 20px;
+}
+
+.iconItem div{
+  /*임시*/
+  padding: 2px;
+}
+
+.btn{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  background-color:transparent ;
+  border: none;
+
+
+  color: #A5A5A5;
+  font-weight: bolder;
+
+
+
 }

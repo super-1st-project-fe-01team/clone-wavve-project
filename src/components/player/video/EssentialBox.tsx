@@ -1,23 +1,31 @@
 import React from "react";
 import styles from "./EssentialBox.module.css";
+import {NON_LIKE_IMAGE, SHARE_IMAGE} from "../../../data/logoImages";
 
 const EssentialBox = () => {
+
+
   return (
       <div className={styles.essentialBox}>
         <div className={styles.buttonBox}>
           <button>로그인</button>
         </div>
         <div className={styles.iconBox}>
-          <ul>
-            <li className="icon-item">
-              <input type="checkbox" id="check-like" />
-              <label htmlFor="check-like">관심</label>
-            </li>
-            <li>
-              <input type="button" id="share" />
-              <label htmlFor="share">공유</label>
-            </li>
-          </ul>
+
+            <div className={styles.iconItem}>
+              <button className={styles.btn}>
+                <div><img src={NON_LIKE_IMAGE} alt="like Image"/>
+                </div> <div>관심</div>
+              </button>
+            </div>
+
+            <div className={styles.iconItem}>
+              <button className={styles.btn}>
+                <div><img src={SHARE_IMAGE} alt="share Image"/>
+                </div> <div>공유</div>
+              </button>
+            </div>
+
         </div>
       </div>
   );
