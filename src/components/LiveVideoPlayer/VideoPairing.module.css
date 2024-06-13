@@ -13,6 +13,11 @@
   padding-left: 0;
 }
 
+.channelPairingListContainer {
+  width: 950px;
+  overflow: hidden;
+}
+
 .channelPairingList {
   list-style: none;
   display: flex;
@@ -20,21 +25,35 @@
   scroll-behavior: smooth;
 }
 
-.channelPairingListContainer {
-  width: 950px;
-  overflow: hidden;
-}
-
-.channelPairingTime {
+.channelPairingTimeArea {
   flex: 0 0 200px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   padding: 10px  ;
   border: 1px solid #333;
   white-space: nowrap;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.channelPairingTime {
+  display: flex;
+  flex-direction: column;
+}
+
+.clockIconArea{
+  position: absolute;
+  background-color: #1b1b1b;
+  border: none;
+  bottom: 15px;
+  right: 25px;
+
+}
+.clockIcon{
+  width: 20px;
+  height: 20px;
 }
 
 .arrow {
@@ -56,5 +75,10 @@
 .rightArrow {
   right: 0;
   margin-right: 120px;
+}
+
+.ArrowIcon {
+  width: 22px;
+  height: 22px;
 }
 
