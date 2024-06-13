@@ -4,7 +4,7 @@ import styles from "./Navigation.module.css";
 
 const Navigation = () => {
     const [cateShow, setCateShow] = useState(false);
-    
+
     return (
         <header>
             <div id={styles.headerNav}>
@@ -29,7 +29,7 @@ const Navigation = () => {
                                 onMouseOut={() => {
                                     setCateShow(false)
                                 }}>
-                                <Link to="#">카테고리</Link>
+                                <Link to="/Category">카테고리</Link>
                                 <div className={styles.categoryMenu}
                                      onMouseOut={() => {
                                          setCateShow(false)
