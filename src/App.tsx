@@ -9,7 +9,7 @@ import LiveMain from "./components/Live/LiveMain";
 import Video from "./components/LiveVideoPlayer/Video"
 import VideoIcon from "./components/LiveVideoPlayer/VideoIcon"
 import VideoPairing from "./components/LiveVideoPlayer/VideoPairing"
-import Login from "./components/login"
+import Login from "./components/login/loginMain/login"
 import LoginTop from "./components/login/top/loginTop"
 import LoginMid from "./components/login/mid/loginMid"
 import LoginBottom from "./components/login/bottom/loginBottom"
