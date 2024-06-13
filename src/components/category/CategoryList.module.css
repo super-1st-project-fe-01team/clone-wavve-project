@@ -1,0 +1,89 @@
+.categoryListContentWrap {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.categoryWrap {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swiperButton {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    z-index: 50;
+    top: 50%;
+    cursor: pointer;
+    will-change: transform;
+    transform: translateZ(0);
+    transition: .2s;
+}
+
+.prev {
+    left: 0;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAAAAXNSR0IArs4c6QAAAk1JREFUWAljZGBg8AViugMmutsItXDUYrqF/GhQjwY1zUJgNHHRLGjRDR4NavQQoRl/6Aa1h4eH0OvXrzsfP35cS0rwUOTjpKQk6bVr13aLiIhosrGxcdPF4srKStUZM2Z0cnFxib558+Ya0OfNpFjMQopimNoJEyYY5uTkVDIzM3M8efLklKWlZReQ/gWTJ4Ym2eJly5bZR0RE5DMyMrLcuHFjj5mZ2ZTPnz//I8YyZDUkWbxr1y4/V1fXZKABjGfOnFljamq6CNkwUthEW3z69Ok4ExOTEKDh/3fv3j3Hzc1tEykWoaslmKp5eXmZrl+/ngey9P///3+WL1/eR6mlIEcQtDg9PV1RVVXVBqT43bt3d8rKyo6D2JQCZqAB6vgMOXbs2Pvfv39fsLOzs+Th4ZGOi4vT2bNnz/EXL178xqePkBxBi0EGHDly5N3Tp09PAhOWOT8/v0JkZKTphQsXTt65c+c7IQtwyRNlMUjz+fPnP587d+6In5+fIR8fn3xQUJA10NdnQeK4DMcnTrTFIENAPty5c+eh4OBgLZDPvby87P78+XMZFCL4LMEmR5LFIANAcQtM2YfCwsIUBAUFlRwcHOyFhITu7Nix4wU2C3CJMQIlyOqmgrLZqVOncjQ0NFxA2Wzp0qX9sbGxh3FZhC5OtsUwg2AFy48fP95ycnImwsQJ0USXXLgMAhWbs2fPvvXr16+/uNRgE6fYx9gMJUaMYMlFjCHkqBm1mJxQI0vPaFCTFWzkaBoNanJCjSw9o0FNVrCRo2nkBTUAEty9EV4H4C8AAAAASUVORK5CYII=") transparent no-repeat;
+
+}
+
+.next {
+    right: 0;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAyCAYAAABLXmvvAAAAAXNSR0IArs4c6QAAAkxJREFUWAljZGBg8AViugMmutsItXDUYrqF/GhQjwY1zUJgNHHRLGjRDR4NavQQoRl/aAT148eP616/ft3p4eEhRGlQkORjNjY2LhEREc21a9d2JyUlSVNiOTNQszqxBuzdu/d4cHCwFj8/v4KXl5fdnz9/Lh85cuQdsfqR1ZFk8YsXL34vX778UFhYmIKgoKCSg4ODvZCQ0J0dO3a8QDaUGDYjUBHJjT1eXl6mU6dO5WhoaLj8////z4oVKyZGRUUdJMZCmBqyLIZpPn36dJyJiUkIkP9/9+7dc93c3DbB5AjRJCUudMNMTU0XAS2cAxJ3dXVNATkEXQ0uPkUWgwwF+RIY732gIAf5/vr163mgqMBlIUycpMQF04ROnzx58nl8fLwhFxeXCDDRSX348OHssWPH3qOrQ+YTdBmyYmxsQ0ND7vPnzzcJCwur//79+1NtbW11T0/PXWxqkcVYkDmkskEl2MqVKxv5+Pjkv3379jo3N7du3rx5T4kxh2wfg0ouUAkGsvTTp08PgQVLKbGWghxGlsWVlZWqM2bM6ATGqeibN2+uAQuSCmAhQlIJRnJQT5gwwTAnJ6eSmZmZ48mTJ6csLS27gPQvYoIXWQ1JFi9evNg2Ojq6kJGRkeXGjRt7zMzMpnz+/PkfsoHEskkqub5//z6fg4ND+MyZM2tAhQexlmBTR1I+lpKSenbx4sWjvr6+W7EZRooYST4mxWBCaslK1YQMJUZ+1GJiQokqakaDmirBSIwho0FNTChRRc1oUFMlGIkxZOQFNQCulrMDdzyubwAAAABJRU5ErkJggg==") transparent no-repeat;
+}
+
+.categoryList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+    height: 360px;
+    margin-bottom: 80px;
+}
+
+.list {
+    position: relative;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 240px;
+    height: 360px;
+    border-radius: 12px;
+}
+
+.categoryList ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.categoryListWrap {
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    transition-duration: 0.2s;
+}
+
+.categoryListWrap:hover {
+    transform: scale(1.03);
+    transition: ease-in-out .1s;
+    overflow: hidden;
+}
+
+.listBadge {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    overflow: hidden;
+}
+
+.listBadge span {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    background: url("https://www.wavve.com/img/element-icons-tag-ic-brand-wavve.3546d071.svg") transparent no-repeat;
+}
