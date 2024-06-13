@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "./loginBottom.module.css";
-import loginIcon1 from "/loginIcon/apple-icon.png";
-import loginIcon2 from "./loginIcon/naver-icon.png";
-import loginIcon3 from "./loginIcon/kakao-icon.png";
+import kakao from './loginIcon/kakao-icon.png';
+import naver from './loginIcon/naver-icon.png';
+import apple from './loginIcon/apple-icon.png';
 
-const loginBottom = () => {
+const LoginBottom = () => {
   return (
       <div>
         <div className={styles.bottomTitle}>
           또는 다른 서비스 계정으로 로그인
         </div>
         <div className={styles.bottomSns}>
-          <img src="/loginIcon/kakao-icon.png" className={styles.kakao}></img>
-          <img src="/loginIcon/naver-icon.png" className={styles.naver}></img>
-          <img src="/loginIcon/apple-icon.png" className={styles.apple}></img>
+          <img src={kakao} className={styles.kakao} alt="Kakao Login"></img>
+          <img src={naver} className={styles.naver} alt="Naver Login"></img>
+          <img src={apple} className={styles.apple} alt="Apple Login"></img>
         </div>
         <div className={styles.bottomDetail}>
           SNS 계정으로 간편하게 가입하여 서비스를 이용하실 수 있습니다.
@@ -24,4 +24,4 @@ const loginBottom = () => {
   );
 };
 
-export default loginBottom;
+export default LoginBottom;
