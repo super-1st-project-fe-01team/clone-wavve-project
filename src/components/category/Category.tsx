@@ -8,6 +8,7 @@ import {Player} from "../../models/Player";
 import PlayerItem from "../player/PlayerItem";
 import CategoryContentTitle from "./CategoryContentTitle";
 import BadgeImg from "./BadgeImg";
+import CategoryList from "./CategoryList";
 
 
 const Category = () => {
@@ -45,6 +46,7 @@ const Category = () => {
                     <div className={`${styles.swiperButton} ${styles.prev}`}></div>
                     <div className={`${styles.swiperButton} ${styles.next}`}></div>
                 </section>
+                <CategoryList/>
                 <Footer/>
             </main>
         </>
