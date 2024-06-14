@@ -13,7 +13,9 @@ interface shareContent {
 // @ts-ignore
 const ShareModal:React.FC<shareContent> = (props) => {
 
-  return createPortal(
+  return (
+
+    createPortal(
     <div className={styles.modalBox}>
       <div className={styles.modalContent}>
 
@@ -46,14 +48,13 @@ const ShareModal:React.FC<shareContent> = (props) => {
         </div>
       </div>
 
-
       <div>
         <button className={styles.closeButton} onClick={props.closeModal}><img src={"https://www.wavve.com/img/btn-popup-close.1b1a67e7.svg"}/></button>
       </div>
 
     </div>
  , document.getElementById("overlay-root") as HTMLElement)
-
-};
+ )
+}
 
 export default ShareModal;

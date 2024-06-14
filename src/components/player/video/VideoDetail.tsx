@@ -30,7 +30,7 @@ const VideoDetail:React.FC<VideoDetailProps> = (props) => {
 
         {/*현재는 영화만 만들었기때문에 직접 문자열로 넣어줬음*/}
         <EssentialBox  type={"movie"} id={props.movieId}/>
-        <div className={styles.synopsis}>{props.synopsis} <button>더보기</button></div>
+        <div className={styles.synopsis}>{props.synopsis} <button className={styles.addViewButton} onClick={ () => window.scrollTo(0, 10000)}>더보기</button></div>
       </div>
   )
 };
