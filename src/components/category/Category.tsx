@@ -2,8 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import styles from "./Category.module.css";
 import CategoryTitle from "./CategoryTitle"
-import CategoryContentTitle from "./CategoryContentTitle";
-import CategoryList from "./CategoryList";
 import Footer from "../footer/Footer";
 import {dummyDataList} from "../../data/dummyMovieDatas";
 import {Player} from "../../models/Player";
@@ -32,23 +30,18 @@ const Category = () => {
                 {playerList.map((player) => {
                   console.log(`아이디값:  ${player.movieId}`);
                   return (
-                      <Link to={`/player/${player.movieId}`}>
                         <div className={styles.list}>
                           <PlayerItem
-                              movieId={player.movieId}
+                              playerId={player.movieId}
+                              thumbnailImageUrl={player.bottomContents.thumbnailImage}
                               brandLogoList={player.brandLogoList}
-                              backdropImage={player.backdropImage}
-                              videoDetail={player.videoDetail}
-                              bottomContents={player.bottomContents}
                           />
                         </div>
-                      </Link>
                   );
                 })}
             </div>
           </div>
           <div className={`${styles.swiperButton} ${styles.prev}`}></div>
-          <div className={`${styles.swiperButton} ${styles.next}`}></div>
         </section>
        <Footer/>
         </main>
