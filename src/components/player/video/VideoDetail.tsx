@@ -21,12 +21,15 @@ const VideoDetail:React.FC<VideoDetailProps> = (props) => {
         </div>
 
         <div className={styles.titleImageContainer}><img src={props.titleImage}/></div>
-        <MetadataList releaseYear={props.metadataList.releaseYear}
-                                     playTime={props.metadataList.playTime}
-                                     targetAge={props.metadataList.targetAge}
-                                     genres={props.metadataList.genres}/>
+        <MetadataList releaseYear={
+                      props.metadataList.releaseYear}
+                      playTime={props.metadataList.playTime}
+                      targetAge={props.metadataList.targetAge}
+                      genres={props.metadataList.genres}
+        />
 
-        <EssentialBox />
+        {/*현재는 영화만 만들었기때문에 직접 문자열로 넣어줬음*/}
+        <EssentialBox  type={"movie"} id={props.movieId}/>
         <div className={styles.synopsis}>{props.synopsis} <button>더보기</button></div>
       </div>
   )

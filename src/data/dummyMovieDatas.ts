@@ -6,6 +6,7 @@ export const dummyDataList:Player[] = [{
   backdropImage: "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202310/1698127085202207761.webp",  // moviegroup_horizontal_logoY_image
 
   videoDetail: {
+    movieId:"MV_CD01_WR0000011729",
     titleImage: "https://image.wavve.com/v1/thumbnails/0_0_20_80/meta/image/202310/1698127096531213659.png",  // moviegrouptitlelogoimage
     metadataList: {
       releaseYear: 2023,   // originalreleaseyear+"년"
@@ -43,6 +44,7 @@ export const dummyDataList:Player[] = [{
 
     backdropImage: "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1714110746929872591.webp",
     videoDetail: {
+      movieId: "MV_MC01_MC000000103",
       titleImage:"https://image.wavve.com/v1/thumbnails/0_0_20_80/meta/image/202404/1714110759310485273.png",
       metadataList: {
         releaseYear: 2024,   // originalreleaseyear+"년"

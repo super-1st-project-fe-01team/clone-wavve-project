@@ -41,6 +41,7 @@ const PlayerContentWarp:React.FC = () => {
                       metadataList={player.videoDetail.metadataList}
                       synopsis={player.videoDetail.synopsis}
                       brandLogoList={player.brandLogoList}
+                      movieId={player.movieId}
                   />
                 </div>
               </div>

@@ -1,5 +1,6 @@
 
 export interface VideoDetailProps {
+  movieId:String;  //movieid
   titleImage:string; // moviegrouptitlelogoimage
   metadataList: MetadataListProps;
   synopsis: string;  // synopsis
