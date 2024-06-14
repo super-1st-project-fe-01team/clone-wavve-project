@@ -11,7 +11,7 @@ const Navigation = () => {
                 <div className={styles.headerGnbWrap}>
                     <div className={styles.gnbWrap}>
                         <h1 className={styles.logo}>
-                            <Link to="#">
+                            <Link to="/home">
                                 <img
                                     src="https://www.wavve.com/img/ci-wavve.5b304973.svg"
                                     alt="웨이브로고"
@@ -63,11 +63,11 @@ const Navigation = () => {
                             <label htmlFor="search" className={styles.btnSearch}>
                                 <span className={styles.a11yHidden}>검색</span>
                             </label>
-                            <input type="text" id="search" name="search" placeholder="제목, 장르, 배우로 찾아보세요"
+                            <input type="text" id="search" name="search"
                                    className={styles.searchInput}/>
-                            <p className={styles.btnDel}>
-                                <span className={styles.a11yHidden}>검색어 삭제</span>
-                            </p>
+                            {/*<p className={styles.btnDel}>*/}
+                            {/*    <span className={styles.a11yHidden}>검색어 삭제</span>*/}
+                            {/*</p>*/}
                         </div>
                     </div>
                 </div>
