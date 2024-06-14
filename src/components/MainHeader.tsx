@@ -4,13 +4,13 @@ import Navigation from "./navigation/Navigation";
 import {Outlet} from "react-router-dom";
 
 const MainHeader = () => {
-  return (
-      <div>
-        <Utilmenu/>
-        <Navigation/>
-        <Outlet/>
-      </div>
-  );
+    return (
+        <div>
+            <Utilmenu/>
+            <Navigation/>
+            <Outlet/>
+        </div>
+    );
 };
 
 export default MainHeader;
