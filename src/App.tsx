@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <MainHeader/>,
     children: [
+      { path: "/", element: <Home /> },
       {path: "/category", element: <Category/>},
       {path: "/home", element: <Home/>},
       {path: "/live-main", element: <LiveMain/>},
