@@ -57,7 +57,6 @@ const Home = () => {
                 </div>
             </section>
             <MainCategory/>
-            <Footer/>
         </div>
     );
 };
