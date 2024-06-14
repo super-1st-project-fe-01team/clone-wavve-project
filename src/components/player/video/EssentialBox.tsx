@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./EssentialBox.module.css";
-import {NON_LIKE_IMAGE, SHARE_IMAGE} from "../../../data/logoImages";
+import {LIKE_IMAGE, NON_LIKE_IMAGE, SHARE_IMAGE} from "../../../data/logoImages";
 
 const EssentialBox = () => {
+  const[isLike, setIsLike] = useState<boolean>(false);
+
+  const likeButtonClickHandler = () =>{
+    isLike? setIsLike(false):setIsLike(true);
+  }
 
 
   return (
@@ -13,9 +18,11 @@ const EssentialBox = () => {
         <div className={styles.iconBox}>
 
             <div className={styles.iconItem}>
-              <button className={styles.btn}>
-                <div><img src={NON_LIKE_IMAGE} alt="like Image"/>
-                </div> <div>관심</div>
+              <button className={styles.btn} onClick={likeButtonClickHandler}>
+                <div>
+                  {isLike ? <img src={LIKE_IMAGE} alt="like Image"/> : <img src={NON_LIKE_IMAGE} alt="non like Image"/>}
+                </div>
+                <div>관심</div>
               </button>
             </div>
 
