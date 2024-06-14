@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "../category/Category.module.css";
 import {Link} from "react-router-dom";
 import {BottomContentsProps, Player} from "../../models/Player";
+import BadgeImg from "../category/BadgeImg";
 
 
 interface PlayerItemProps{
@@ -20,19 +21,13 @@ const PlayerItem:React.FC<PlayerItemProps> = (props) => {
   console.log(`썸네일이미지: ${props.thumbnailImageUrl}`)
   return (
       <div className={styles.list}>
-        <Link to={`/player/${props.playerId}`}>
           <div className={styles.categoryListWrap}>
             <img
                 src={props.thumbnailImageUrl}
                 alt="거래"
             />
           </div>
-          {props.brandLogoList.includes("only", 0) &&(
-                <div className={styles.listBadge}>
-                    <span>Wavve 배찌</span>
-                </div>
-          )}
-        </Link>
+        <BadgeImg brandLogoList={props.brandLogoList}/>
       </div>
   );
 };

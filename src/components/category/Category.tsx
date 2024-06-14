@@ -33,7 +33,7 @@ const Category = () => {
                               thumbnailImageUrl={player.bottomContents.thumbnailImage}
                               brandLogoList={player.brandLogoList}
                           />
-                          <BadgeImg/>
+                          {/*<BadgeImg/>*/}
                         </div>
                       </Link>
                   );
