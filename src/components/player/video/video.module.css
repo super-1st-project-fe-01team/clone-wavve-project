@@ -29,7 +29,9 @@
 }
 
 .titleImageContainer img{
-  width: 285px;
+
+  width: 40%;
+  /*width: 285px;*/
   margin-bottom: 20px;
 }
 

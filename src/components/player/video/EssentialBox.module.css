@@ -3,7 +3,7 @@
   align-items: center;
 
   color: #a5a5a5;
-
+  margin-bottom: 10px;
 
   /*background-color: purple;*/
 }
@@ -33,6 +33,7 @@
 
 .iconItem{
   margin-right: 20px;
+
 }
 
 .iconItem div{
