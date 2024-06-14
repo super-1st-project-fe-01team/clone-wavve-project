@@ -6,6 +6,7 @@ export const dummyDataList:Player[] = [{
   backdropImage: "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202310/1698127085202207761.webp",  // moviegroup_horizontal_logoY_image
 
   videoDetail: {
+    movieId:"MV_CD01_WR0000011729",
     titleImage: "https://image.wavve.com/v1/thumbnails/0_0_20_80/meta/image/202310/1698127096531213659.png",  // moviegrouptitlelogoimage
     metadataList: {
       releaseYear: 2023,   // originalreleaseyear+"년"
@@ -43,6 +44,7 @@ export const dummyDataList:Player[] = [{
 
     backdropImage: "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1714110746929872591.webp",
     videoDetail: {
+      movieId: "MV_MC01_MC000000103",
       titleImage:"https://image.wavve.com/v1/thumbnails/0_0_20_80/meta/image/202404/1714110759310485273.png",
       metadataList: {
         releaseYear: 2024,   // originalreleaseyear+"년"
@@ -69,6 +71,42 @@ export const dummyDataList:Player[] = [{
         directors: ["고바야시 게이이치"],  // directors.list -> text
         targetAge: 12,  // targetage
         deliverationInfo: ["12세", "전체", "전체", "전체", "12세", "전체", "전체"]  // deliverationinfo (parsed ages)
+      }
+    }
+  },
+  {
+    movieId: "MV_WV01_WV000000083",  // movieid
+    brandLogoList: ["original"],  // brand_logolist
+
+    backdropImage: "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1712297721149759439.webp",
+    videoDetail: {
+      movieId: "MV_WV01_WV000000083",
+      titleImage:"https://image.wavve.com/v1/thumbnails/0_0_20_80/meta/image/202404/1712297732551998616.png",
+      metadataList: {
+        releaseYear: 2024,   // originalreleaseyear+"년"
+        playTime: 6519,  // playtime
+        targetAge: 15, // targetage
+        genres: ["범죄", "드라마","미스터리","스릴러"],  // genre.list -> text
+      },
+      synopsis:"목숨값 단돈 500만 원!" ,
+      brandLogoList: ["original"],  // brand_logolist
+    },
+
+    bottomContents: {
+      thumbnailImage: "https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202404/1712297723766994349.webp",  // image
+      preview: {
+        title: "데드 맨",  // title
+        synopsis:"목숨값 단돈 500만 원!" ,
+      },
+      detailView: {
+        title: "데드맨",  // title
+        synopsis:"목숨값 단돈 500만 원!" ,
+        summary: "대한민국, 2024년",  // country, originalreleaseyear + "년"
+        genreTags: ["범죄", "드라마","미스터리","스릴러"],  // tags.list -> text
+        castings: ["하준원", "조진웅", "김희애", "이수경"],  // actors.list -> text
+        directors: ["고바야시 게이이치"],  // directors.list -> text
+        targetAge: 15,  // targetage
+        deliverationInfo: ["15세", "전체", "15세", "15세", "15세", "15세", "15세"]  // deliverationinfo (parsed ages)
       }
     }
   },

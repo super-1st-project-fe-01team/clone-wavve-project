@@ -20,7 +20,7 @@ const DetailView:React.FC<DetailViewProps> = (props) => {
           <div className={styles.summary}>{props.synopsis}</div>
         </div>
 
-        <div>
+        <div className={styles.detailInfoBox}>
           <table className={styles.detailInfoTable}>
           <tbody>
           <tr>

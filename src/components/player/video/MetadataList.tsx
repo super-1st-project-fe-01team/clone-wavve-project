@@ -6,12 +6,6 @@ import styles from "../video/video.module.css"
 const MetadataList:React.FC<MetadataListProps> = (props) => {
 
   return (
-    // <div className={styles.dotItemBox}>
-    //   <span className={styles.dotItem}>{props.releaseYear}</span>
-    //   <span className={styles.dotItem}>{`·${Math.floor(props.playTime/60)}분`}·</span>
-    //   <span className={styles.dotItem}><img src={AGE_IMAGES[props.targetAge]}/></span>
-    //   <span className={styles.dotItem}>{`·${props.genres[0]}`}</span>
-    // </div>
 
       <div className={styles.dotItemBox}>
         <div className={styles.dotItem}>{props.releaseYear}년</div>

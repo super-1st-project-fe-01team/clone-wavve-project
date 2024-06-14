@@ -17,18 +17,19 @@
 
 
 .playerNavItem{
-  height: 80%;
+  height: 100%;
 
   display: flex;
   justify-content: center;
   padding: 0px 8px 0px 10px;
+  margin-right: 10px;
 
 }
 
 
 
 .playerNavItemActive{
-  height: 80%;
+  height: 100%;
 
   display: flex;
   justify-content: center;

@@ -1,7 +1,7 @@
-
-
 .dotItemBox{
  display: flex;
+
+  /*background-color: red;*/
 }
 
 .dotItem{
@@ -29,10 +29,23 @@
 }
 
 .titleImageContainer img{
- width: 400px;
+
+  width: 40%;
+  /*width: 285px;*/
   margin-bottom: 20px;
 }
 
 .brandBox{
   margin-bottom: 30px;
+
+}
+
+.videoDetailBox{
+ /*background-color: #61dafb;*/
+
+  width: 100%;
+}
+
+.addViewButton{
+  cursor: pointer;
 }

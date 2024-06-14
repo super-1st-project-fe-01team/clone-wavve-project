@@ -3,6 +3,9 @@
   align-items: center;
 
   color: #a5a5a5;
+  margin-bottom: 10px;
+
+  /*background-color: purple;*/
 }
 
 .buttonBox button {
@@ -13,6 +16,10 @@
 
   width: 360px;
   height: 48px;
+
+  padding: 0px 40px;
+
+  cursor: pointer;
 }
 
 .iconBox {
@@ -21,11 +28,14 @@
 
   /*임시*/
   padding: 15px;
+
+  /*background-color: tomato;*/
 }
 
 
 .iconItem{
   margin-right: 20px;
+
 }
 
 .iconItem div{
@@ -45,6 +55,10 @@
   color: #A5A5A5;
   font-weight: bolder;
 
+  cursor: pointer;
+}
 
+.closeButton{
 
+  background-color: transparent;
 }

@@ -21,10 +21,7 @@ const PlayerContentWarp:React.FC = () => {
   const movieId = useLocation().pathname.substring(8);
   console.log("현재 url: ", movieId)
 
-
   const[player, setPlayer] = useState(dummyDataList.find((player) => player.movieId == movieId));
-  // const targetData = dummyDataList[0];
-  // const player:Player|undefined = dummyDataList.find((player) => player.movieId == movieId);
   console.log("targetPlayer:",player);
 
 
@@ -44,6 +41,7 @@ const PlayerContentWarp:React.FC = () => {
                       metadataList={player.videoDetail.metadataList}
                       synopsis={player.videoDetail.synopsis}
                       brandLogoList={player.brandLogoList}
+                      movieId={player.movieId}
                   />
                 </div>
               </div>
