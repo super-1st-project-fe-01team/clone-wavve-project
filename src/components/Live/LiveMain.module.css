@@ -1,9 +1,8 @@
 .liveList {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-left: 200px;
-  padding-right: 200px;
-  background-color: #1b1b1b;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .thumbnail {

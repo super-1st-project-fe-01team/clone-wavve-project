@@ -1,11 +1,11 @@
 .filterBoxWrap {
     width: 100%;
+
 }
 
 .filterBox {
     width: 1240px;
     margin: 30px auto 10px;
-    background-color: #1b1b1b;
     display: flex;
     justify-content: space-between;
     align-items: center;
