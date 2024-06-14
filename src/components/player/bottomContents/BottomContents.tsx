@@ -20,7 +20,7 @@ const BottomContents:React.FC<BottomContentsProps> = (props) => {
           <div className={styles.detailViewBox}>
             <div className={styles.thumbnailContainer}> <img src={props.thumbnailImage}/> </div>
 
-            <div className={styles.detailInfoBox}>
+            <div className={styles.detailContainer}>
               {/*<Preview title={props.preview.title}*/}
               {/*         synopsis={props.preview.synopsis}*/}
               {/*/>*/}
@@ -34,7 +34,8 @@ const BottomContents:React.FC<BottomContentsProps> = (props) => {
                           directors={props.detailView.directors}
                           targetAge={props.detailView.targetAge}
                           deliverationInfo={props.detailView.deliverationInfo}
-              /></div>
+              />
+            </div>
 
           </div>
         </div>

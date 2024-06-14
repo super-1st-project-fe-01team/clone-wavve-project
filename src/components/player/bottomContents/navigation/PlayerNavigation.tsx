@@ -6,6 +6,12 @@ const PlayerNavigation = () => {
       <div>
         <nav className={styles.playerNav}>
           <div className={styles.playerNavItem}>
+            <button>관련영상</button>
+          </div>
+          <div className={styles.playerNavItem}>
+            <button>시리즈</button>
+          </div>
+          <div className={styles.playerNavItem}>
             <button>추천</button>
           </div>
           <div className={styles.playerNavItemActive}>
