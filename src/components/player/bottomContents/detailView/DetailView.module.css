@@ -1,5 +1,6 @@
 .detailViewBox {
   display: flex;
+
 }
 
 
@@ -14,6 +15,7 @@
 .detailInfoBox {
 
   margin: 18px 0px 0px 20px;
+
 }
 
 
@@ -45,6 +47,7 @@
 
 .iconItemContainer{
   display: flex;
+
 }
 
 .iconItem {

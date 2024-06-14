@@ -13,7 +13,7 @@ const BottomContents:React.FC<BottomContentsProps> = (props) => {
   const image1:string="https://image.wavve.com/v1/thumbnails/240_360_20_80/meta/image/202404/1714110749654413518.webp";
   const image2:string="image.wavve.com/meta/image/202404/1714110749654413518.jpg";
   return (
-      <div>
+      <div className={styles.bottomWarp}>
         <PlayerNavigation />
         <div>
 
