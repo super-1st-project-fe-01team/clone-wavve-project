@@ -52,7 +52,6 @@ const VideoPairing:React.FC = () => {
               </div>
           ))}
         </ul>
-
         </div>
         <button className={`${styles.arrow} ${styles.rightArrow}`} onClick={scrollRight}>
           <img className={styles.ArrowIcon}

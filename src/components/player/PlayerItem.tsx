@@ -12,10 +12,10 @@ interface PlayerItemProps{
 
 const PlayerItem:React.FC<PlayerItemProps> = (props) => {
 
-  // 현 컴포넌트에서 필요한 값
-  // 이미지url
-  // Id
-  // 누르면 PlayerContent.tsx 이동
+    // 현 컴포넌트에서 필요한 값
+    // 이미지url
+    // Id
+    // 누르면 PlayerContent.tsx 이동
 
   console.log(`썸네일이미지: ${props.thumbnailImageUrl}`)
   return (

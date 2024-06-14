@@ -4,14 +4,14 @@ import styles from "./Navigation.module.css";
 
 const Navigation = () => {
     const [cateShow, setCateShow] = useState(false);
-    
+
     return (
         <header>
             <div id={styles.headerNav}>
                 <div className={styles.headerGnbWrap}>
                     <div className={styles.gnbWrap}>
                         <h1 className={styles.logo}>
-                            <Link to="#">
+                            <Link to="/home">
                                 <img
                                     src="https://www.wavve.com/img/ci-wavve.5b304973.svg"
                                     alt="웨이브로고"
@@ -19,7 +19,9 @@ const Navigation = () => {
                             </Link>
                         </h1>
                         <ul>
-                            <li><Link to="#">홈</Link></li>
+                            <li><Link to="#"></Link>
+                                <NavLink to="/home">홈</NavLink>
+                            </li>
                             <li className={cateShow ? styles.cateOver : styles.cate}
                                 onMouseOver={() => {
                                     setCateShow(true)
@@ -27,7 +29,7 @@ const Navigation = () => {
                                 onMouseOut={() => {
                                     setCateShow(false)
                                 }}>
-                                <Link to="#">카테고리</Link>
+                                <Link to="/Category">카테고리</Link>
                                 <div className={styles.categoryMenu}
                                      onMouseOut={() => {
                                          setCateShow(false)
@@ -51,7 +53,7 @@ const Navigation = () => {
                                 </div>
                             </li>
                             <li><Link to="#"></Link>
-                                <NavLink to="/LiveMain">LIVE</NavLink>
+                                <NavLink to="/live-main">LIVE</NavLink>
                             </li>
                             <li><Link to="#"></Link>
                                 <NavLink to="/Login">MY</NavLink>
@@ -61,16 +63,15 @@ const Navigation = () => {
                             <label htmlFor="search" className={styles.btnSearch}>
                                 <span className={styles.a11yHidden}>검색</span>
                             </label>
-                            <input type="text" id="search" name="search" placeholder="제목, 장르, 배우로 찾아보세요"
+                            <input type="text" id="search" name="search"
                                    className={styles.searchInput}/>
-                            <p className={styles.btnDel}>
-                                <span className={styles.a11yHidden}>검색어 삭제</span>
-                            </p>
+                            {/*<p className={styles.btnDel}>*/}
+                            {/*    <span className={styles.a11yHidden}>검색어 삭제</span>*/}
+                            {/*</p>*/}
                         </div>
                     </div>
                 </div>
             </div>
-            <Outlet />
         </header>
 
     );

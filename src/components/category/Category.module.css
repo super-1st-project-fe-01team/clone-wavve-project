@@ -15,7 +15,7 @@
     height: 50px;
     z-index: 50;
     top: 50%;
-    margin-top: -20px;
+    margin-top: 10px;
     cursor: pointer;
     will-change: transform;
     transform: translateZ(0);
@@ -66,25 +66,12 @@
     transition-duration: 0.2s;
 }
 
+.categoryListWrap img {
+    width: 100%;
+}
+
 .categoryListWrap:hover {
     transform: scale(1.03);
     transition: ease-in-out .1s;
     overflow: hidden;
-}
-
-.listBadge {
-    position: absolute;
-    top: -18px;
-    right: 0;
-    overflow: hidden;
-}
-
-.listBadge span {
-    width: 44px;
-    height: 44px;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -9999px;
-    background: url("https://www.wavve.com/img/element-icons-tag-ic-brand-wavve.3546d071.svg") transparent no-repeat;
 }

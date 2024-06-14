@@ -6,42 +6,42 @@ import Footer from "../footer/Footer";
 import {dummyDataList} from "../../data/dummyMovieDatas";
 import {Player} from "../../models/Player";
 import PlayerItem from "../player/PlayerItem";
-import Navigation from "../navigation/Navigation";
-
+import CategoryContentTitle from "./CategoryContentTitle";
+import BadgeImg from "./BadgeImg";
 
 
 const Category = () => {
 
-    const playerList:Player[] = dummyDataList;
+    const playerList: Player[] = dummyDataList;
 
 
   return (
       <>
         <main>
-          <Navigation/>
           <CategoryTitle/>
           <section className={`${styles.categoryWrap} ${styles.categoryDrama}`}>
             <div className={styles.contentWrap}>
-              <div className={styles.contentTitle}>
-                <h2>오직 웨이브에서 #드라마</h2>
-                <p>더보기</p>
-              </div>
+              <CategoryContentTitle/>
               <div className={styles.categoryList}>
                 {playerList.map((player) => {
                   console.log(`아이디값:  ${player.movieId}`);
                   return (
+                      <Link to={`/player/${player.movieId}`}>
                         <div className={styles.list}>
                           <PlayerItem
                               playerId={player.movieId}
                               thumbnailImageUrl={player.bottomContents.thumbnailImage}
                               brandLogoList={player.brandLogoList}
                           />
+                          <BadgeImg/>
                         </div>
+                      </Link>
                   );
                 })}
             </div>
           </div>
           <div className={`${styles.swiperButton} ${styles.prev}`}></div>
+          <div className={`${styles.swiperButton} ${styles.next}`}></div>
         </section>
        <Footer/>
         </main>

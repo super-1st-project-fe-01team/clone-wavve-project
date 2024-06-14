@@ -1,12 +1,10 @@
 import "./App.css";
 import {RouterProvider, createBrowserRouter, RouteObject} from "react-router-dom";
+import MainHeader from "./components/MainHeader";
 import Home from "./components/home/Home"
 import Category from './components/category/Category'
 import LiveMain from "./components/Live/LiveMain";
 import Video from "./components/LiveVideoPlayer/Video"
-import VideoIcon from "./components/LiveVideoPlayer/VideoIcon"
-import VideoPairing from "./components/LiveVideoPlayer/VideoPairing"
-import MainHeader from "./components/MainHeader";
 import Login from "./components/login/loginMain/login"
 import PlayerContentWarp from "./components/player/PlayerContent";
 import {dummyDataList} from "./data/dummyMovieDatas";
@@ -40,6 +38,7 @@ const router = createBrowserRouter([
       {path: "/video", element: <Video/>},
       {path: "/login", element: <Login/>},
     ...playerRoutes
+
     ],
   },
 ]);
