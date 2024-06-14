@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import styles from "./LiveMain.module.css";
 import HeaderFilter from './HeaderFilter';
 import HeaderIcon from "./HeaderIcon"
-import Footer from "../footer/Footer"
 
 
 export interface Live {
@@ -73,7 +72,6 @@ const LiveMain: React.FC = () => {
             </div>
         ))}
         </div>
-        <Footer/>
       </div>
   )
 };

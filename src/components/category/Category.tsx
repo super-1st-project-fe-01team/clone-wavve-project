@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import styles from "./Category.module.css";
 import CategoryTitle from "./CategoryTitle"
-import Footer from "../footer/Footer";
 import {dummyDataList} from "../../data/dummyMovieDatas";
 import {Player} from "../../models/Player";
 import PlayerItem from "../player/PlayerItem";
@@ -43,7 +42,6 @@ const Category = () => {
           <div className={`${styles.swiperButton} ${styles.prev}`}></div>
           <div className={`${styles.swiperButton} ${styles.next}`}></div>
         </section>
-       <Footer/>
         </main>
         </>
     );
