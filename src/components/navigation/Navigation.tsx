@@ -29,7 +29,7 @@ const Navigation = () => {
                                 onMouseOut={() => {
                                     setCateShow(false)
                                 }}>
-                                <Link to="/Category">카테고리</Link>
+                                <Link to="#">카테고리</Link>
                                 <div className={styles.categoryMenu}
                                      onMouseOut={() => {
                                          setCateShow(false)
