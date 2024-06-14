@@ -24,14 +24,9 @@ const PlayerContentWarp:React.FC = () => {
 
   const[player, setPlayer] = useState(dummyDataList.find((player) => player.movieId == movieId));
   // const targetData = dummyDataList[0];
-
   // const player:Player|undefined = dummyDataList.find((player) => player.movieId == movieId);
   console.log("targetPlayer:",player);
 
-  // 임시
-  const backdropImage:string = "https://image.wavve.com/v1/thumbnails/1240_698_20_80/meta/image/202404/1714110746929872591.webp";
-
-  // 배경이미지, 썸네일 문제
 
   return (
       <>

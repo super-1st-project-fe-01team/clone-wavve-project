@@ -9,7 +9,7 @@ export interface BadgeImgProps{
 //:React.FC<BadgeImgProps[]>
 const BadgeImg:React.FC<BadgeImgProps> = (props) => {
     return (
-        props.brandLogoList.includes("only", 0)? (
+        props.brandLogoList.length > 0 ? (
               <div className={styles.list}>
                 <span className={styles.listBadge}>뱃지</span>
               </div>
