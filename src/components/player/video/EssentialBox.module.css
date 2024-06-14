@@ -55,3 +55,8 @@
 
   cursor: pointer;
 }
+
+.closeButton{
+
+  background-color: transparent;
+}

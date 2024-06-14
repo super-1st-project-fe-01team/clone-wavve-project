@@ -48,7 +48,7 @@ const ShareModal:React.FC<shareContent> = (props) => {
 
 
       <div>
-        <button onClick={props.closeModal}><img src={"https://www.wavve.com/img/btn-popup-close.1b1a67e7.svg"}/></button>
+        <button className={styles.closeButton} onClick={props.closeModal}><img src={"https://www.wavve.com/img/btn-popup-close.1b1a67e7.svg"}/></button>
       </div>
 
     </div>
