@@ -28,3 +28,15 @@ export const DELIVERATION_INFO_IMAGES :string[]=[
 export const LIKE_IMAGE:string ="https://www.wavve.com/img/element-icons-30-x-30-ic-big-like-on.c1f4e9c7.svg";
 export const NON_LIKE_IMAGE:string ="https://www.wavve.com/img/element-icons-30-x-30-ic-big-like-off.88996165.svg";
 export const SHARE_IMAGE:string ="https://www.wavve.com/img/element-icons-30-x-30-ic-detail-share.0ce04411.svg";
+
+
+
+
+type Brand ={
+  [key:string]:string;
+}
+
+export const BRAND_LOGO_IMAGE:Brand ={
+  "only": "https://www.wavve.com/img/element-icons-logo-wavve-only.a1683da1.svg",
+  "original": "https://www.wavve.com/img/element-icons-logo-wavve-original.0d64a871.svg"
+}
