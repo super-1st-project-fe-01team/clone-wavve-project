@@ -1,6 +1,5 @@
 .SliderContent {
-    margin: 0 10px;
-
+    margin: 0 10px 80px;
 }
 
 .SliderContent {
@@ -10,8 +9,4 @@
 .SliderContent img {
     border-radius: 12px;
     width: 100%;
-}
-
-ul {
-    
 }
