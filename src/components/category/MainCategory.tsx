@@ -21,14 +21,13 @@ const MainCategory = () => {
                             return (
                                 <Link to={`/player/${player.movieId}`}>
                                     <div className={styles.list}>
+
                                         <PlayerItem
-                                            movieId={player.movieId}
+                                            playerId={player.movieId}
+                                            thumbnailImageUrl={player.bottomContents.thumbnailImage}
                                             brandLogoList={player.brandLogoList}
-                                            backdropImage={player.backdropImage}
-                                            videoDetail={player.videoDetail}
-                                            bottomContents={player.bottomContents}
                                         />
-                                        <BadgeImg/>
+                                        {/*<BadgeImg/>*/}
                                     </div>
                                 </Link>
                             );
