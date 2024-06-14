@@ -1,12 +1,20 @@
 import React from 'react';
 import styles from './VideoIcon.module.css'
+import {Live} from "../Live/thumbnail";
 
-const VideoIcon: React.FC = () => {
+interface VideoIconProps {
+  live: Live;
+}
+
+const VideoIcon: React.FC<VideoIconProps> = ({ live }) => {
   return (
         <div className={styles.videoList}>
           <div className={styles.titleList}>
-          <div className={styles.videoTitle}>YTN YTN24</div>
-          <button className={styles.loginButton}>로그인(무료시청)</button>
+            <div>
+              <div className={styles.videoTitle}>{live.title}</div>
+              <div className={styles.subTitle}>{live.subtitle}</div>
+            </div>
+            <button className={styles.loginButton}>로그인(무료시청)</button>
           </div>
           <ul className={styles.videoIconList}>
             <li className={styles.videoIconText}>

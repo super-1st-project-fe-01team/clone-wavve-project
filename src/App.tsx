@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {path: "/category", element: <Category/>},
       {path: "/home", element: <Home/>},
       {path: "/live-main", element: <LiveMain/>},
-      {path: "/video", element: <Video/>},
+      {path: "/video/:id", element: <Video/>},
       {path: "/login", element: <Login/>},
     ...playerRoutes
 

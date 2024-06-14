@@ -1,5 +1,5 @@
 .videoList{
-  height: 160px;
+  height: 200px;
   background-color: #1b1b1b;
   padding-left: 200px;
   padding-right: 255px;
@@ -15,6 +15,12 @@
   color: white;
   font-size: 30px;
   margin-top: 20px ;
+}
+
+.subTitle {
+  color: white;
+  font-size: 20px;
+  padding-top: 5px;
 }
 
 .loginButton{

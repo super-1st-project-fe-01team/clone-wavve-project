@@ -14,11 +14,11 @@ const categories = [
     '라디오/음악'
 ];
 
-interface FilterHeaderProps {
+interface HeaderFilterProps {
     onCategoryChange: (category: string) => void;
 }
 
-const HeaderFilter: React.FC<FilterHeaderProps> = ({onCategoryChange}) => {
+const HeaderFilter: React.FC<HeaderFilterProps> = ({onCategoryChange}) => {
     const [selectCategory, setSelectCategory] = useState<string>('전체 장르');
 
     const filterChangeHandler = (event: React.ChangeEvent<HTMLSelectElement>) => {
