@@ -1,13 +1,17 @@
 .SliderContent {
-    margin: 0 10px;
-
-}
-
-.SliderContent {
-
+    margin: 0 10px 80px;
 }
 
 .SliderContent img {
     border-radius: 12px;
     width: 100%;
+}
+
+.SliderContent {
+    position: relative;
+}
+
+.imgPosition {
+    position: absolute;
+    top: 0;
 }

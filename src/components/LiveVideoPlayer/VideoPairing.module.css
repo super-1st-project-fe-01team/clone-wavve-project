@@ -1,42 +1,85 @@
 .channelPairingArea {
-  background-color: #1b1b1b;color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #1b1b1b;
+  color: #a4a4a4;
+  padding-left: 210px;
+  padding-right: 265px;
+  position: relative;
 }
 
 .channelPairingTitle {
   color: white;
-  font-size: 22px;
-  padding: 15px ;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-left: 0;
 }
 
-ul {
+.channelPairingListContainer {
+  width: 1150px;
+  overflow: hidden;
+}
+
+.channelPairingList {
   list-style: none;
-  padding: 0;
-}
-
-li {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.channelPairingTimeArea {
+  flex: 0 0 250px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px  ;
+  border: 1px solid #333;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.channelPairingTime {
+  display: flex;
+  flex-direction: column;
+}
+
+.clockIconArea{
+  position: absolute;
+  background-color: #1b1b1b;
+  border: none;
+  bottom: 15px;
+  right: 25px;
+
+}
+.clockIcon{
+  width: 25px;
+  height: 25px;
+}
+
+.arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: #1b1b1b;
+  border: none;
+  color: #fff;
   padding: 10px;
-  border-bottom: 1px solid #333;
+  cursor: pointer;
 }
 
-li:last-child {
-  border-bottom: none;
+.leftArrow {
+  left: 0;
+  margin-left: 170px;
 }
 
-.current {
-  background-color: #1e90ff;
+.rightArrow {
+  right: 0;
+  margin-right: 470px;
 }
 
-.title {
-  font-weight: bold;
+.ArrowIcon {
+  width: 30px;
+  height: 35px;
 }
 
-.time {
-  color: #aaa;
-}

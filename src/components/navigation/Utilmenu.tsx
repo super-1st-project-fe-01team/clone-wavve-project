@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, NavLink,Outlet} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import styles from "./Utilmenu.module.css";
 
 const Utilmenu = () => {
@@ -39,7 +39,6 @@ const Utilmenu = () => {
                     </ul>
                 </div>
             </div>
-            <Outlet/>
         </header>
     );
 };

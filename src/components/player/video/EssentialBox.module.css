@@ -1,0 +1,64 @@
+.essentialBox {
+  display: flex;
+  align-items: center;
+
+  color: #a5a5a5;
+  margin-bottom: 10px;
+
+  /*background-color: purple;*/
+}
+
+.buttonBox button {
+  color: #ffffff;
+  background-color: #1351f9;
+  border: none;
+  border-radius: 10px;
+
+  width: 360px;
+  height: 48px;
+
+  padding: 0px 40px;
+
+  cursor: pointer;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+
+  /*임시*/
+  padding: 15px;
+
+  /*background-color: tomato;*/
+}
+
+
+.iconItem{
+  margin-right: 20px;
+
+}
+
+.iconItem div{
+  /*임시*/
+  padding: 2px;
+}
+
+.btn{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  background-color:transparent ;
+  border: none;
+
+
+  color: #A5A5A5;
+  font-weight: bolder;
+
+  cursor: pointer;
+}
+
+.closeButton{
+
+  background-color: transparent;
+}

@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   background-color: black;
-  height: 350px;
+  height: 33lvw;
 }
 
 .videoPaly {
-  width: 500px;
-  height: 300px;
-  margin: 10px;
+  width: 55lvw;
+  height: 33lvw;
+
 }

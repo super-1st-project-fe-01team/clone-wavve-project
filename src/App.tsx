@@ -1,42 +1,45 @@
 import "./App.css";
-import {RouterProvider,createBrowserRouter} from "react-router-dom";
+import {RouterProvider, createBrowserRouter, RouteObject} from "react-router-dom";
+import MainHeader from "./components/MainHeader";
+import Home from "./components/home/Home"
 import Category from './components/category/Category'
-import CategoryTitle from "./components/category/CategoryTitle";
-import Footer from "./components/footer/Footer";
-import HeaderFilter from "./components/Live/HeaderFilter";
-import HeaderIcon from "./components/Live/HeaderIcon";
 import LiveMain from "./components/Live/LiveMain";
 import Video from "./components/LiveVideoPlayer/Video"
-import VideoIcon from "./components/LiveVideoPlayer/VideoIcon"
-import VideoPairing from "./components/LiveVideoPlayer/VideoPairing"
 import Login from "./components/login/loginMain/login"
-import LoginTop from "./components/login/top/loginTop"
-import LoginMid from "./components/login/mid/loginMid"
-import LoginBottom from "./components/login/bottom/loginBottom"
-import Navigation from "./components/navigation/Navigation"
-import Utilmenu from "./components/navigation/Utilmenu"
+import PlayerContentWarp from "./components/player/PlayerContent";
+import {dummyDataList} from "./data/dummyMovieDatas";
+
+
+
+// 임시방편.. 원래는 절대 이렇게하는거 아닙니다....
+const playerRoutes: RouteObject[] = dummyDataList.map((player) => ({
+  path: `/player/${player.movieId}`,
+  element: <PlayerContentWarp/>,
+
+
+  // element: <PlayerContentWarp movieId={player.movieId}
+  //                             brandLogoList={player.brandLogoList}
+  //                             backdropImage={player.backdropImage}
+  //                             videoDetail={player.videoDetail}
+  //                             bottomContents={player.bottomContents}/>,
+}));
+
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Utilmenu/>,
+    element: <MainHeader/>,
     children: [
-      {path: "Category", element: <Category/>},
-      {path: "/CategoryTitle", element: <CategoryTitle/>},
-      {path: "/Footer", element: <Footer/>},
-      {path: "/HeaderFilter", element: <HeaderFilter/>},
-      {path: "/HeaderIcon", element: <HeaderIcon/>},
-      {path: "/LiveMain", element: <LiveMain/>},
-      {path: "/Video", element: <Video/>},
-      {path: "/VideoIcon", element: <VideoIcon/>},
-      {path: "//VideoPairing", element: <VideoPairing/>},
+      { path: "/", element: <Home /> },
+      {path: "/category", element: <Category/>},
+      {path: "/home", element: <Home/>},
+      {path: "/live-main", element: <LiveMain/>},
+      {path: "/video", element: <Video/>},
       {path: "/login", element: <Login/>},
-      {path: "/loginTop", element: <LoginTop/>},
-      {path: "/LoginMid", element: <LoginMid/>},
-      {path: "/LoginBottom", element: <LoginBottom/>},
-      {path: "/Navigation", element: <Navigation/>},
-      {path: "/Utilmenu", element: <Utilmenu/>}
+    ...playerRoutes
+
     ],
   },
 ]);

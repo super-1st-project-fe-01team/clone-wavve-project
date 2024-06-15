@@ -4,8 +4,6 @@ import LoginTop from "../top/loginTop";
 import LoginMid from "../mid/loginMid";
 import LoginBottom from "../bottom/loginBottom";
 
-
-
 const Login = () => {
   return (
       <div>

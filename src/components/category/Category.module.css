@@ -3,28 +3,6 @@
     margin: 0 auto;
 }
 
-.contentTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.contentTitle h2 {
-    font-size: 22px;
-    font-weight: 500;
-    margin: 0;
-}
-
-.contentTitle p {
-    font-size: 14px;
-    color: #a5a5a5;
-    cursor: pointer;
-    padding-right: 18px;
-    background: url("https://www.wavve.com/img/icon-arrow-see-all-default.01e1b585.svg") no-repeat 100%;
-    background-size: 16px auto;
-}
-
 .categoryWrap {
     width: 1240px;
     margin: 0 auto;
@@ -37,6 +15,7 @@
     height: 50px;
     z-index: 50;
     top: 50%;
+    margin-top: 10px;
     cursor: pointer;
     will-change: transform;
     transform: translateZ(0);
@@ -87,25 +66,12 @@
     transition-duration: 0.2s;
 }
 
+.categoryListWrap img {
+    width: 100%;
+}
+
 .categoryListWrap:hover {
     transform: scale(1.03);
     transition: ease-in-out .1s;
     overflow: hidden;
-}
-
-.listBadge {
-    position: absolute;
-    top: -18px;
-    right: 0;
-    overflow: hidden;
-}
-
-.listBadge span {
-    width: 44px;
-    height: 44px;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -9999px;
-    background: url("https://www.wavve.com/img/element-icons-tag-ic-brand-wavve.3546d071.svg") transparent no-repeat;
 }

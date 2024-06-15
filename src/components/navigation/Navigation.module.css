@@ -22,6 +22,7 @@ body {
     position: relative;
     width: 1240px;
     height: 74px;
+    /*padding-right: 250px;*/
     margin: 0 auto;
     display: flex;
 }
@@ -62,7 +63,7 @@ body {
     position: absolute;
     top: 74px;
     left: 50%;
-    margin-left: -355px;
+    margin-left: -360px;
     padding: 30px 20px;
     background-color: #101010;
     min-width: 180px;
@@ -132,7 +133,7 @@ body {
 .searchBox label {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 9px;
     z-index: 10;
 }
@@ -155,11 +156,11 @@ body {
 }
 
 .searchBox input {
-    width: 360px;
+    width: 1px;
     height: 40px;
-    padding: 0 40px;
+    padding: 0 40px 0 0;
     opacity: 1;
-    background: #000;
+    background: transparent;
     border: 1px solid #232323;
     border-radius: 4px;
     font-size: 16px;
