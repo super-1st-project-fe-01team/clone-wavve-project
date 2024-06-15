@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./loginMid.module.css";
 import Data from '../../data/data.json';
-
+import { useNavigate } from "react-router-dom";
 
 const LoginMid: React.FC = () => {
   const [id, setId] = useState('');
@@ -9,6 +9,7 @@ const LoginMid: React.FC = () => {
   const [alertMessage, setAlertMessage] = useState('');
   const [idAlertMessage, setIdAlertMessage] = useState('');
   const [passwordAlertMessage, setPasswordAlertMessage] = useState('');
+  const navigate = useNavigate();
 
   const idHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const currentValue = e.target.value;
@@ -38,6 +39,7 @@ const LoginMid: React.FC = () => {
     const foundUser = Data.find((user: any) => user.id === id && user.password === password);
     if (foundUser) {
       console.log('성공');
+      navigate('/home');
     } else {
       alert("입력하신 정보에 해당하는 계정을 찾을 수 없습니다. ID, PW를 확인해주세요");
       console.log('실패');
